@@ -1,0 +1,89 @@
+
+.peopleimg>img{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+}
+
+.company-banner-box{
+    display:flex;
+    /* border: 1px solid black; */
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.inner-box{
+    width: 60%;
+    /* border: 1px solid black; */
+    display:flex;
+    /* align-items: center; */
+}
+
+.inner-box>img{
+}
+
+.company-info{
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+
+    /* margin-left: 40px; */
+}
+
+.mission-box{
+    display:flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mission-inner-box{
+    display: flex;
+    background-image: url('../../assets/aboutusimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 70vh;
+    position: relative;
+    
+}
+.mission-inner-box>img{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+
+}
+
+.mission-content-box{
+    border-left:7px solid gold;
+    border-top-left-radius: 13px ;
+    border-bottom-left-radius: 13px ;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top:20%;
+    left: 20%;
+    background-color: white;
+    opacity: .9;
+}
+
+.team-box{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.team-boxes{
+    display:flex;
+    flex-direction: column;
+    /* border:2px solid black; */
+    gap: 10px;
+}
+
+.team-boxes>div>img{
+    width: 167px;
+    height: 207px;
+}
+
