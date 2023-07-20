@@ -11,6 +11,9 @@ module.exports = {
         primaryLight:'#FFE942' // Example using a named CSS color
       },
     },
+    fontFamily:{
+      'mont':['Montserrat']
+    }
   },
   plugins: [],
 }
