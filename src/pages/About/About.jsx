@@ -3,10 +3,9 @@ import "./About.css";
 import peopleimg from "../../assets/peopleimage.jpg";
 import logo from "../../assets/logo.png";
 import pp1 from "../../assets/pp1.jpg";
-import pp2 from "../../assets/pp2.jpg";
-import pp3 from "../../assets/pp3.jpg";
-import pp4 from "../../assets/pp4.jpg";
+
 import Counter from "./Counter/Counter";
+
 
 const About = () => {
   return (

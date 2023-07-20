@@ -15,6 +15,8 @@ import peopleimg from "../../assets/homepeopleimg.jpg";
 
 import homepageimg from "../../assets/homepageimg.jpg";
 import Service from "../Services/Service";
+import Country from "../Countries/Country";
+import Contact from "../../components/Contact/Contact";
 const Home = () => {
   return (
     <div>
@@ -143,7 +145,7 @@ const Home = () => {
       {/* Select Passion Starts */}
       <br />
       <br />
-      <div className=" flex items-center justify-center text-7xl font-extrabold ">
+      <div className=" flex items-center justify-center text-5xl font-extrabold ">
         <div className=" p-2 border-b-4 border-amber-400 mb-8 font-mont font-medium">
           Choose Your{" "}
           <span className="text-amber-400 uppercase font-mont font-medium">
@@ -152,39 +154,40 @@ const Home = () => {
         </div>
       </div>
       <div className="flex items-center justify-center p-4 text-center flex-wrap">
-        <div className="uppercase text-4xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Science
         </div>
-        <div className="uppercase text-4xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Accountancy
         </div>
-        <div className="uppercase text-4xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Engineering
         </div>
-        <div className="uppercase text-4xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Management
         </div>
       </div>
       <div className="flex items-center justify-center p-4 text-center flex-wrap">
-        <div className="uppercase text-4xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Economic
         </div>
-        <div className="uppercase text-4xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Biotechnology
         </div>
-        <div className="uppercase text-4xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Finance
         </div>
-        <div className="uppercase text-4xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:animate-pulse hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Social Studies
         </div>
       </div>
     <br /><br /><br />
       {/* Select Passion Ends */}
-      {/* Service Starts  */}
       <Service/>
-      {/* Service Ends */}
-      <Crousal />
+      <Country/>
+      <Contact/>
+      <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a>
+
     </div>
   );
 };
