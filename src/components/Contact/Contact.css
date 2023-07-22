@@ -68,7 +68,7 @@
 .right-side .input-box textarea {
   height: 100%;
   width: 100%;
-  border: none;
+  /* border: none; */
   outline: none;
   font-size: 16px;
   background: #f0f1f8;

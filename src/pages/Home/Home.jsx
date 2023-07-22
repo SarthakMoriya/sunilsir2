@@ -1,31 +1,29 @@
 import React from "react";
-import Crousal from "../../components/Crousal/Crousal";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Counter from "../../pages/About/Counter/Counter";
 import "./Home.css";
-import uni1 from "../../assets/universities/uni1.png";
-import uni2 from "../../assets/universities/uni2.png";
-import uni3 from "../../assets/universities/uni3.png";
-import uni4 from "../../assets/universities/uni4.jpg";
-import uni5 from "../../assets/universities/uni6a.png";
-import uni6 from "../../assets/universities/uni5.png";
-import uni7 from "../../assets/universities/uni7.png";
-import uni8 from "../../assets/universities/uni6b.png";
+
 import peopleimg from "../../assets/homepeopleimg.jpg";
 
 import homepageimg from "../../assets/homepageimg.jpg";
 import Service from "../Services/Service";
-import Country from "../Countries/Country";
+import Review from "../../components/Reviews/Review";
+import University from "./University/University";
 import Contact from "../../components/Contact/Contact";
 const Home = () => {
   return (
-    <div>
+    <div className="w-[100vw]">
       <br />
       <br />
       <br />
       <br />
       <br />
-      <div className="flex justify-center items-center ">
+      <motion.div
+        whileInView={{ y: [200, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="flex justify-center items-center h-[50vh]"
+      >
         <div className="flex flex-col">
           <div className="  text-[40px] ">
             <div className="font-bold text-amber-400">
@@ -43,18 +41,27 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
+      <br />
       <br />
       <br />
       <br />
       {/* Study abroad starts */}
-      <div className="flex items-center justify-center">
+      <motion.div
+        whileInView={{ y: [200, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center justify-center"
+      >
         <div className="flex justify-center">
           <div className="content flex flex-col items-center  border  w-[40%]">
             <div className="font-bold text-primary text-6xl mt-[8rem] mb-5">
               Study Abroad
             </div>
-            <div className="text-xl p-6 ">
+            <motion.div
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className="text-xl p-6 "
+            >
               Unlock a world of opportunities with Godspeed's global education
               platform. Experience life-changing exposure and growth through
               studying abroad. Our mission is to bring students closer to their
@@ -63,51 +70,34 @@ const Home = () => {
               transformative journey that will shape your future. Dare to dream
               big and let Godspeed be your guide to a brighter and more
               promising tomorrow.
-            </div>
+            </motion.div>
           </div>
           <div className="image-content">
             <img src={homepageimg} alt="" />
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Study abroad Ends */}
-      {/* university pics starts */}
+
       <br />
       <br />
-      <div className="flex items-center justify-around  border-t border-amber-400">
-        <div className="">
-          <img src={uni1} alt="" />
-        </div>
-        <div className="">
-          <img src={uni2} alt="" />
-        </div>
-        <div className="">
-          <img src={uni3} alt="" />
-        </div>
-        <div className="">
-          <img src={uni4} alt="" />
-        </div>
-      </div>
-      <div className="flex items-center justify-around border border-amber-400 ">
-        <div className="">
-          <img src={uni5} alt="" />
-        </div>
-        <div className="">
-          <img src={uni6} alt="" />
-        </div>
-        <div className="">
-          <img src={uni7} alt="" />
-        </div>
-        <div className="">
-          <img src={uni8} alt="" />
-        </div>
-      </div>
-      {/* university pics ends */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <University />
+      <br />
+      <br />
+      <br />
+      <br />
+
       {/* People Imgage starts*/}
-      <img
+      <motion.img
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1.5,ease:"easeInOut" }}
         src={peopleimg}
         alt=""
-        className="h-[80vh] w-[100vw] contrast-100 grayscale"
+        className="h-[80vh] w-[100vw] contrast-100 grayscale opacity-0"
       />
       {/* People Imgage ends*/}
       {/* Counter starts */}
@@ -181,13 +171,19 @@ const Home = () => {
           Social Studies
         </div>
       </div>
-    <br /><br /><br />
+      <br />
+      <br />
+      <br />
       {/* Select Passion Ends */}
-      <Service/>
-      <Country/>
-      <Contact/>
-      <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a>
-
+      <Service />
+      {/* <Contact/> */}
+      <Review />
+      {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
+      <br /><br />
+      <div className="flex flex-col items-center justify-center ">
+        <Contact />
+      </div>
+      <br /><br /><br /><br />
     </div>
   );
 };

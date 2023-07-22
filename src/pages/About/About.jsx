@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import peopleimg from "../../assets/peopleimage.jpg";
 import logo from "../../assets/logo.png";
 import pp1 from "../../assets/pp1.jpg";
 
 import Counter from "./Counter/Counter";
+import Review from "../../components/Reviews/Review";
 
 
 const About = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on page load
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="relative bg-slate-100 ">
       <br />
@@ -159,9 +164,9 @@ const About = () => {
       <br />
       <br />
       <div className="flex items-center justify-center  p-4 ">
-        <div className="flex justify-between w-[80%] shadow-2xl p-4 rounded-3xl ">
-          <div className="flex flex-col text-6xl">
-            <div className="flex justify-center items-center text-amber-400">
+        <div className="flex justify-between w-[80%]  p-4  border-b-4 border-t-4 border-amber-400">
+          <div className="flex flex-col text-6xl ">
+            <div className="flex justify-center items-center text-amber-400 ">
               <Counter end={23} />+
             </div>
             <div className="text-2xl font-bold mt-4">Visa Categories</div>
@@ -192,17 +197,16 @@ const About = () => {
       <br />
       <br />
       <br />
-      <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
-        <div className="border-b-4 border-b-amber-400 pb-2">Testimonial</div>
-      </div>
-      <div className="flex items-center justify-center mt-5 text-3xl">
-        <span className=" text-4xl font-extrabold ml-3">
-          Satisfied Customers
-        </span>
-      </div>
-      <br />
-      <br />
-      <div className="flex items-center ">
+      <Review/>
+      {/* Review Ends */}
+    </div>
+  );
+};
+
+export default About;
+
+/**
+ *       <div className="flex items-center ">
         <div className="flex items-center justify-around w-full">
           <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-xl p-3">
             <div class="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
@@ -485,9 +489,4 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* Review Ends */}
-    </div>
-  );
-};
-
-export default About;
+ */

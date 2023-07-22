@@ -5,7 +5,7 @@ import mail from "../../assets/contactform/email.png";
 import "./Contact.css";
 const Contact = () => {
   return (
-    <div classNameName="flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div className="container relative">
         <div className="content">
           <div className="left-side">
@@ -37,19 +37,19 @@ const Contact = () => {
             </p>
             <form action="#">
               <div className="input-box">
-                <input type="text" placeholder="Enter your name" />
+                <input className="caret-amber-400 border-2 focus:border-amber-400" type="text" placeholder="Enter your name" />
               </div>
               <div className="input-box">
-                <input type="text" placeholder="Enter your number" />
+                <input className="caret-amber-400 border-2 focus:border-amber-400" type="text" placeholder="Enter your number" />
               </div>
               <div className="input-box">
-                <input type="text" placeholder="Enter your email" />
+                <input className="caret-amber-400 border-2 focus:border-amber-400" type="text" placeholder="Enter your email" />
               </div>
               <div className="input-box message-box">
-                <textarea type="text" placeholder="Enter your email" />
+                <textarea className="caret-amber-400 border-2 focus:border-amber-400" type="text" placeholder="Enter your email" />
               </div>
               <div className="button border bg-amber-400   hover:border-t-black hover:border-b-black hover:animate-pulse">
-                <input type="button" value="Send Now" />
+                <input className="caret-amber-400 border-2 focus:border-amber-400" type="button" value="Send Now" />
               </div>
             </form>
           </div>

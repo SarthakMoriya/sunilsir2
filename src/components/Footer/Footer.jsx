@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,12 +24,11 @@ const Footer = () => {
             <div class="col-span-2">
               <div>
                 <h2 class="text-2xl font-bold text-gray-900">
-                  Get the latest news!
+                  Infinity Immigration Consultant
                 </h2>
 
                 <p class="mt-4 text-gray-500">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                  non cupiditate quae nam molestias.
+                DON'T JUST DREAM, LET'S MAKE IT A REALITY
                 </p>
               </div>
             </div>
@@ -56,141 +56,165 @@ const Footer = () => {
             </div>
 
             <div class="col-span-2 sm:col-span-1">
+              <p class="font-medium text-gray-900">Countries</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in Canada
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in Dubai
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in Australia
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in Malaysia
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in Singapore
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in New Zealand
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in UK
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/' class="text-gray-800 transition hover:text-amber-400">
+                    Study in USA
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-span-2 sm:col-span-1">
               <p class="font-medium text-gray-900">Services</p>
 
               <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    1on1 Coaching
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Migration VIsa
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Company Review
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Tourist Visa
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Accounts Review
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Business Visa
+                  </Link>
                 </li>
-
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    HR Consulting
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Residence Visa
+                  </Link>
                 </li>
-
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    SEO Optimisation
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Family Visa
+                  </Link>
                 </li>
-              </ul>
-            </div>
-
-            <div class="col-span-2 sm:col-span-1">
-              <p class="font-medium text-gray-900">Company</p>
-
-              <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    About
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Meet the Team
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Accounts Review
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Student Visa
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div class="col-span-2 sm:col-span-1">
-              <p class="font-medium text-gray-900">Helpful Links</p>
+              <p class="font-medium text-gray-900">Quick Links</p>
 
               <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
+                  <Link href="#" class="text-gray-700 transition hover:text-amber-400">
                     Contact
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    FAQs
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    Home
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Live Chat
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                   About Us
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div class="col-span-2 sm:col-span-1">
-              <p class="font-medium text-gray-900">Legal</p>
+              <p class="font-medium text-gray-900">Contact</p>
 
               <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Accessibility
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    +91 12345667890
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Returns Policy
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    +91 78945611230
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Refund Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
-                    Hiring Statistics
-                  </a>
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
+                    22b new kangra colony,sector12 chandigrah
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            <div class="col-span-2 sm:col-span-1">
+            {/* <div class="col-span-2 sm:col-span-1">
               <p class="font-medium text-gray-900">Downloads</p>
 
               <ul class="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Marketing Calendar
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:text-amber-400">
+                  <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     SEO Infographics
-                  </a>
+                  </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-700 transition hover:opacity-75"
@@ -209,12 +233,12 @@ const Footer = () => {
                       clip-rule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-700 transition hover:opacity-75"
@@ -233,10 +257,10 @@ const Footer = () => {
                       clip-rule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
-              <li>
+              {/* <li>
                 <a
                   href="/"
                   rel="noreferrer"
@@ -254,9 +278,9 @@ const Footer = () => {
                     <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                   </svg>
                 </a>
-              </li>
+              </li> */}
 
-              <li>
+              {/* <li>
                 <a
                   href="/"
                   rel="noreferrer"
@@ -278,9 +302,9 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-              </li>
+              </li> */}
 
-              <li>
+              {/* <li>
                 <a
                   href="/"
                   rel="noreferrer"
@@ -302,7 +326,7 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -310,26 +334,26 @@ const Footer = () => {
         <div class="mt-8 border-t border-gray-100 pt-8">
           <div class="sm:flex sm:justify-between">
             <p class="text-xs text-gray-500">
-              &copy; 2022. Company Name. All rights reserved.
+              &copy; 2022. Infinity Immigration Consultant. All rights reserved.
             </p>
 
             <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
               <li>
-                <a href="#" class="text-gray-500 transition hover:opacity-75">
+                <Link  class="text-gray-500 transition hover:opacity-75">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" class="text-gray-500 transition hover:opacity-75">
+                <Link  class="text-gray-500 transition hover:opacity-75">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="#" class="text-gray-500 transition hover:opacity-75">
+                <Link  class="text-gray-500 transition hover:opacity-75">
                   Cookies
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

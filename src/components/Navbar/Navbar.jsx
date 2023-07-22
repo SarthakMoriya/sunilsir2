@@ -49,20 +49,20 @@ const Navbar = () => {
           <Link to='/'>Infinty Immigration Consultant</Link>
         </div>
 
-        <div className="mr-2 text-1xl font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
-          Study Abroad
+        <div className="mr-2 text-md font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
+          <Link to='/country'>Study Abroad</Link>
         </div>
-        <div className="mr-2 text-1xl font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
+        <div className="mr-2 text-md font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
           Immigrate To
         </div>
-        <div className="mr-2 text-1xl font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
-          <Link to="/about">About</Link>
+        <div className="mr-2  uppercase cursor-pointer transition-all duration-400 hover:text-primary">
+          <Link to="/about" className="text-md font-bold">About</Link>
         </div>
         <div className="mr-2 text-1xl font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
           Services
         </div>
-        <div className="mr-2 text-1xl font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
-          Contact Us
+        <div className="mr-2 text-md font-bold uppercase cursor-pointer transition-all duration-400 hover:text-primary">
+         <Link className="text-md font-bold" to='/contact'>Contact Us</Link>
         </div>
       </div>
       {/* main Navbar ends */}
