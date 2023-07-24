@@ -4,7 +4,7 @@ import peopleimg from "../../assets/peopleimage.jpg";
 import logo from "../../assets/logo.png";
 import pp1 from "../../assets/pp1.jpg";
 
-import Counter from "./Counter/Counter";
+import Counter from "../../components/Counter/Counter";
 import Review from "../../components/Reviews/Review";
 
 

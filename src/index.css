@@ -8,3 +8,15 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+::-webkit-scrollbar-track{
+  background: black;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: black;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background: white;
+  border-radius: 5px;
+}

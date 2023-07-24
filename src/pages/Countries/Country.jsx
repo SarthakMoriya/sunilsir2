@@ -3,7 +3,7 @@ import './Country.css'
 import peopleimg from "../../assets/peopleimage.jpg";
 import flag from '../../assets/flags.webp'
 import globe from '../../assets/globe.png'
-import Counter from '../About/Counter/Counter';
+import Counter from '../../components/Counter/Counter';
 import CountryCard from '../../components/Cards/CountryCard/CountryCard';
 
 import nz from '../../assets/Country/nz.jpg'
