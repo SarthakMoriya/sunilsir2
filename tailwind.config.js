@@ -1,19 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        primary: '#FFD700', // Example custom color
-        primaryDark: '#C0AD00',
-        primaryLight:'#FFE942' // Example using a named CSS color
+        primary: "#FFD700", // Example custom color
+        primaryDark: "#C0AD00",
+        primaryLight: "#FFE942", // Example using a named CSS color
       },
     },
-    fontFamily:{
-      'mont':['Montserrat']
-    }
+    fontFamily: {
+      mont: ["Montserrat"],
+    },
+    screens: {
+      sm: "640px",
+
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
+
+      "2xl": "1536px",
+    },
   },
   plugins: [],
-}
+};

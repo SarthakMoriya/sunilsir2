@@ -5,7 +5,7 @@
 }
 
 .box1 {
-  height: 445px;
+  /* height: 445px; */
 }
 
 .box1 > div > img {
@@ -16,4 +16,15 @@
 
 .slick-slide div {
   margin: 0 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .box1 {
+    height: 495px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box1 {
+    height: 545px;
+  }
 }

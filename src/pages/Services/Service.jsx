@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import visa from "../../assets/services/visa.png";
 import business from "../../assets/services/briefcase.png";
 import globe from "../../assets/services/world.png";
@@ -6,6 +6,10 @@ import family from "../../assets/services/multiple-users-silhouette.png";
 import home from "../../assets/services/flat.png";
 import student from "../../assets/services/graduation.png";
 const Service = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on page load
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="p-5 border-t border-b border-amber-400 bg-slate-50 ">
       <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">

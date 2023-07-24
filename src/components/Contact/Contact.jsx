@@ -53,9 +53,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          {/* <div classNameName="absolute top-[20px] text-xl bg-amber-400 p-3 rounded-[50%] text-white hover:text-black hover:bg-white transition-all ease-in delay-100 hover:border-4 cursor-pointer">
-            X
-          </div> */}
+
         </div>
       </div>
     </div>

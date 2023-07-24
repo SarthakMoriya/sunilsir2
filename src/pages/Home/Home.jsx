@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion"
 import Counter from "../../pages/About/Counter/Counter";
 import "./Home.css";
 
@@ -12,6 +12,11 @@ import Review from "../../components/Reviews/Review";
 import University from "./University/University";
 import Contact from "../../components/Contact/Contact";
 const Home = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on page load
+    window.scrollTo(0, 0);
+  }, []);
+  const { scrollYProgress } = useScroll();
   return (
     <div className="w-[100vw]">
       <br />
@@ -19,10 +24,14 @@ const Home = () => {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <motion.div className="" style={{ scaleX: scrollYProgress }}/>
       <motion.div
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
-        className="flex justify-center items-center h-[50vh]"
+        className="flex justify-center items-center h-[40vh]"
       >
         <div className="flex flex-col">
           <div className="  text-[40px] ">
@@ -44,8 +53,7 @@ const Home = () => {
       </motion.div>
       <br />
       <br />
-      <br />
-      <br />
+
       {/* Study abroad starts */}
       <motion.div
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
@@ -94,7 +102,7 @@ const Home = () => {
       {/* People Imgage starts*/}
       <motion.img
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 1.5,ease:"easeInOut" }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
         src={peopleimg}
         alt=""
         className="h-[80vh] w-[100vw] contrast-100 grayscale opacity-0"
@@ -103,7 +111,8 @@ const Home = () => {
       {/* Counter starts */}
       <br />
       <br />
-      <div className="flex items-center justify-center  p-4 ">
+      <motion.div 
+      className="flex items-center justify-center  p-4 ">
         <div className="flex justify-between w-[80%]  p-4  border-b-4 border-t-4 border-amber-400">
           <div className="flex flex-col text-6xl ">
             <div className="flex justify-center items-center text-amber-400 ">
@@ -130,54 +139,87 @@ const Home = () => {
             <div className="text-2xl font-bold mt-4">Success Rate</div>
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Counter ends */}
       {/* Select Passion Starts */}
       <br />
       <br />
-      <div className=" flex items-center justify-center text-5xl font-extrabold ">
+      <motion.div
+        whileInView={{ y: [200, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className=" flex items-center justify-center text-5xl font-extrabold ">
         <div className=" p-2 border-b-4 border-amber-400 mb-8 font-mont font-medium">
           Choose Your{" "}
           <span className="text-amber-400 uppercase font-mont font-medium">
             Field
           </span>
         </div>
-      </div>
-      <div className="flex items-center justify-center p-4 text-center flex-wrap">
-        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+      </motion.div>
+      <motion.div
+        whileInView={{ y: [200, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center justify-center p-4 text-center flex-wrap">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Science
-        </div>
-        <div className="uppercase text-2xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Accountancy
-        </div>
-        <div className="uppercase text-2xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Engineering
-        </div>
-        <div className="uppercase text-2xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3 ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Management
-        </div>
-      </div>
-      <div className="flex items-center justify-center p-4 text-center flex-wrap">
-        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        whileInView={{ y: [200, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center justify-center p-4 text-center flex-wrap">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Economic
-        </div>
-        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Biotechnology
-        </div>
-        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Finance
-        </div>
-        <div className="uppercase text-2xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:animate-pulse hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="uppercase text-xl font-bold border  p-3  ml-7 flex-1 hover:border-amber-400 hover:animate-pulse hover:text-amber-400 cursor-pointer hover:bg-slate-200 ">
           Social Studies
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <br />
       <br />
       <br />
       {/* Select Passion Ends */}
       <Service />
       {/* <Contact/> */}
-      <Review />
+      {/* <Review /> */}
       {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
       <br /><br />
       <div className="flex flex-col items-center justify-center ">

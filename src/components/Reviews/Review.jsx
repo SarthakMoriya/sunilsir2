@@ -29,7 +29,7 @@ const Review = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -70,8 +70,8 @@ const Review = () => {
               Highly Recommended
             </span>
           </div>
-          <div className="flex-1 review-desc bg-slate-100 p-2">
-            <span className="p-3 mb-2">
+          <div className="flex-1 review-desc bg-slate-100 p-2 overflow-hidden">
+            <span className="p-3 mb-2 overflow-wrap break-word">
               "I had an incredible experience with the immigration services
               provided by Infinity Immigration Consultant. The team was highly
               professional and guided me through the entire process with ease.
