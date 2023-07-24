@@ -28,3 +28,12 @@
     height: 545px;
   }
 }
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .review>span{
+    font-size: 16px;
+  }
+  .review-desc>span{
+    font-size: 14px;
+  }
+}

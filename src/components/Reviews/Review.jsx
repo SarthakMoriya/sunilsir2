@@ -58,7 +58,7 @@ const Review = () => {
       <br />
       <br />
       <Slider {...settings}>
-        <div className="flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <div className="review-box flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className="flex-1 user-info flex p-3">
             <img src={pp1} alt="user" className="rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium">
@@ -81,7 +81,7 @@ const Review = () => {
           </div>
           <br />
         </div>
-        <div className=" flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp2} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -103,7 +103,7 @@ const Review = () => {
           </div>
           <br />
         </div>
-        <div className=" flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp3} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -126,7 +126,7 @@ const Review = () => {
           </div>
           <br />
         </div>
-        <div className=" flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp4} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -149,7 +149,7 @@ const Review = () => {
           </div>
           <br />
         </div>
-        <div className=" flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp5} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -172,7 +172,7 @@ const Review = () => {
           </div>
           <br />
         </div>
-        <div className=" flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp6} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">

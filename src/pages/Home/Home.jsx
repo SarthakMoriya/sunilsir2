@@ -71,7 +71,7 @@ const Home = () => {
               dreams by offering seamless pathways to international education.
               Embrace boundless horizons, broaden your horizons, and embark on a
               transformative journey that will shape your future. Dare to dream
-              big and let Godspeed be your guide to a brighter and more
+              big and let Infinity Immigration Consultant be your guide to a brighter and more
               promising tomorrow.
             </motion.div>
           </div>
@@ -136,14 +136,11 @@ const Home = () => {
 
       {/* Select Passion Ends */}
       <Service />
-      {/* <Contact/> */}
-      {/* <Review /> */}
-      {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
       <br /><br />
-      <div className="flex flex-col items-center justify-center ">
-        {/* <Contact /> */}
-      </div>
-      <br /><br /><br /><br />
+      <Contact/>
+      <Review />
+      {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
+
     </div>
   );
 };

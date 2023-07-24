@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import "./About.css";
 import peopleimg from "../../assets/peopleimage.jpg";
 import logo from "../../assets/logo.png";
-import pp1 from "../../assets/pp1.jpg";
+import pp1 from "../../assets/people/pp1.jpg";
+import pp2 from "../../assets/people/pp2.jpg";
+import pp3 from "../../assets/people/pp3.jpg";
+import pp4 from "../../assets/people/pp4.jpg";
 
 import Counter from "../../components/Counter/Counter";
 import Review from "../../components/Reviews/Review";
@@ -15,18 +18,17 @@ const About = () => {
   }, []);
   return (
     <div className="relative bg-slate-100 ">
-      <br />
-      <br />
+      <br /><br /><br />
       <br />
       <div className="peopleimg flex items-center ">
         <img src={peopleimg} alt="" className="" />
       </div>
-      <div className="bg-primary w-full h-[60vh] opacity-50 absolute top-0 flex items-center justify-center">
+      <div className="bg-primary w-full h-[48vh] opacity-50 absolute top-[111px] flex items-center justify-center">
         <br />
         <br />
         <br />
       </div>
-      <div className="flex-col items-center text-center opacity-100  absolute top-20 left-[24rem] font-bold text-slate-100">
+      <div className="flex-col items-center text-center opacity-100  absolute top-20 left-[24rem] font-bold text-slate-100 about-heading">
         <br />
         <br />
         <br />
@@ -36,8 +38,7 @@ const About = () => {
         <br />
         <h2 className="text-5xl uppercase ">Trusted Immigration Consultant</h2>
       </div>
-      <br />
-      <br />
+      <br /><br />
       {/* After Image */}
       <div className="company-banner-box">
         <div className="inner-box m-3 p-2 shadow-2xl shadow-slate-300">
@@ -61,10 +62,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
+      <br /><br /><br /><br />
       {/* Mission Box starts */}
       <div className="mission-box">
         <div className="mission-inner-box shadow-2xl  border-primaryDark rounded shadow-slate-300 border-2">
@@ -94,9 +92,7 @@ const About = () => {
         </div>
       </div>
       {/* Mission Box Ends */}
-      <br />
-      <br />
-      <br />
+      <br /><br /><br />
       {/* Team Members starts */}
       <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
         <div className="border-b-4 border-b-amber-400 pb-2">
@@ -109,48 +105,53 @@ const About = () => {
       </div>
 
       <div className="team-box p-3">
-        <div className="team-box p-3 ">
-          <div className="team-boxes  flex justify-center items-center p-2  ">
-            <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-              <img src={pp1} alt="" />
-              <div className="name font-medium text-amber-400 mt-2">
-                John Wick
+        <div className="team-box p-3 flex-wrap">
+          <div className="tablet-team">
+
+            <div className="team-boxes  flex justify-center items-center p-2  ">
+              <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
+                <img src={pp1} alt="" />
+                <div className="name font-medium text-amber-400 mt-2">
+                  John Wick
+                </div>
+                <div className="job-position font-bold text-zinc-700 mx-3 whitespace-nowrap">
+                  Founder & Managing Partner
+                </div>
               </div>
-              <div className="job-position font-bold text-zinc-700 mx-3">
-                Founder & Managing Partner
+            </div>
+            <div className="team-boxes  flex justify-center items-center p-2  ">
+              <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
+                <img src={pp2} alt="" />
+                <div className="name font-medium text-amber-400 mt-2">
+                  John Wick
+                </div>
+                <div className="job-position font-bold text-zinc-700 mx-3 whitespace-nowrap">
+                  Founder & Managing Partner
+                </div>
               </div>
             </div>
           </div>
-          <div className="team-boxes  flex justify-center items-center p-2  ">
-            <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-              <img src={pp1} alt="" />
-              <div className="name font-medium text-amber-400 mt-2">
-                John Wick
-              </div>
-              <div className="job-position font-bold text-zinc-700 mx-3">
-                Founder & Managing Partner
-              </div>
-            </div>
-          </div>
-          <div className="team-boxes  flex justify-center items-center p-2  ">
-            <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-              <img src={pp1} alt="" />
-              <div className="name font-medium text-amber-400 mt-2">
-                John Wick
-              </div>
-              <div className="job-position font-bold text-zinc-700 mx-3">
-                Founder & Managing Partner
+          <div className="tablet-team">
+            <div className="team-boxes  flex justify-center items-center p-2  ">
+              <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
+                <img src={pp3} alt="" />
+                <div className="name font-medium text-amber-400 mt-2">
+                  John Wick
+                </div>
+                <div className="job-position font-bold text-zinc-700 mx-3 whitespace-nowrap">
+                  Founder & Managing Partner
+                </div>
               </div>
             </div>
-          </div>
-          <div className="team-boxes  flex justify-center items-center p-2  ">
-            <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-              <img src={pp1} alt="" />
-              <div className="name font-medium text-amber-400 mt-2">
-                John Wick
-              </div>
-              <div className="job-position font-bold text-zinc-700 mx-3">
-                Founder & Managing Partner
+            <div className="team-boxes  flex justify-center items-center p-2  ">
+              <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
+                <img src={pp4} alt="" />
+                <div className="name font-medium text-amber-400 mt-2">
+                  John Wick
+                </div>
+                <div className="job-position font-bold text-zinc-700 mx-3 whitespace-nowrap">
+                  Founder & Managing Partner
+                </div>
               </div>
             </div>
           </div>
@@ -159,45 +160,11 @@ const About = () => {
 
       {/* Team Members Ends */}
       {/* Counter Starts */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className="flex items-center justify-center  p-4 ">
-        <div className="flex justify-between w-[80%]  p-4  border-b-4 border-t-4 border-amber-400">
-          <div className="flex flex-col text-6xl ">
-            <div className="flex justify-center items-center text-amber-400 ">
-              <Counter end={23} />+
-            </div>
-            <div className="text-2xl font-bold mt-4">Visa Categories</div>
-          </div>
-          <div className="flex flex-col text-6xl">
-            <div className="flex justify-center items-center text-amber-400">
-              <Counter end={30} />+
-            </div>
-            <div className="text-2xl font-bold mt-4">Team Members</div>
-          </div>
-          <div className="flex flex-col text-6xl">
-            <div className="flex justify-center items-center text-amber-400">
-              <Counter end={331} />+
-            </div>
-            <div className="text-2xl font-bold mt-4">Visa Process</div>
-          </div>
-          <div className="flex flex-col text-6xl">
-            <div className="flex justify-center items-center text-amber-400">
-              <Counter end={100} />%
-            </div>
-            <div className="text-2xl font-bold mt-4">Success Rate</div>
-          </div>
-        </div>
-      </div>
+      <br /><br /><br />
+      <Counter border={"amber-400"}/>
       {/* Counter ends */}
       {/* Review Starts */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <Review/>
+      <Review />
       {/* Review Ends */}
     </div>
   );

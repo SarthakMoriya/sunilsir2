@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 const CounterBox = ({ end }) => {
   const [counter, setCounter] = useState(false);
@@ -17,11 +17,11 @@ const CounterBox = ({ end }) => {
 
 
 
-const Counter = () => {
+const Counter = ({border}) => {
   return (
     <motion.div
       className="flex items-center justify-center  p-4 counter-container">
-      <div className="flex justify-between w-[80%]  p-4  border-b-4 border-t-4 border-slate-100 counter-inner-box">
+      <div className="flex justify-between w-[80%]  p-4  border-b-4 border-t-4 border-slate-200 counter-inner-box">
         <div className="flex flex-col text-6xl  counter-box">
           <div className="flex justify-center items-center text-amber-400 ">
             <CounterBox end={23} />+
