@@ -17,6 +17,10 @@
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #f6f633;
 }
 
+.mobile-reviews{
+  display: none;
+}
+
 @media screen and (min-width: 425px) and (max-width: 768px) {
   .home-heading {
     font-size: 24px;
@@ -36,7 +40,7 @@
     font-size: 35px;
     margin-top: 4rem;
   }
-  .study-abroad-box-left-subheading{
+  .study-abroad-box-left-subheading {
     font-size: 1.05rem;
     text-align: justify;
   }
@@ -44,32 +48,32 @@
     width: 100vw;
   }
 
-  .counter-container{
+  .counter-container {
     padding: 1rem 0 1rem 0;
   }
 
-  .counter-box{
+  .counter-box {
     font-size: 2.25rem;
   }
-  .counter-inner-box{
+  .counter-inner-box {
     flex-wrap: wrap;
   }
-  .counter-inner-box>div{
+  .counter-inner-box > div {
     padding: 12px;
     width: 50%;
   }
-  .counter-box > :nth-child(2){
+  .counter-box > :nth-child(2) {
     font-size: 18px;
     text-align: center;
     font-weight: 400;
     white-space: nowrap;
   }
-  .passion-box-heading{
-    font-size: 2.0rem;
-    text-transform:none;
+  .passion-box-heading {
+    font-size: 2rem;
+    text-transform: none;
   }
 }
-/* 
+
 @media screen and (min-width: 375px) and (max-width: 424px) {
   .home-heading {
     font-size: 24px;
@@ -89,7 +93,7 @@
     font-size: 35px;
     margin-top: 4rem;
   }
-  .study-abroad-box-left-subheading{
+  .study-abroad-box-left-subheading {
     font-size: 1.05rem;
     text-align: justify;
   }
@@ -97,28 +101,85 @@
     width: 100vw;
   }
 
-  .counter-container{
+  .counter-container {
     padding: 1rem 0 1rem 0;
   }
 
-  .counter-box{
+  .counter-box {
     font-size: 2.25rem;
   }
-  .counter-inner-box{
+  .counter-inner-box {
     flex-wrap: wrap;
   }
-  .counter-inner-box>div{
+  .counter-inner-box > div {
     padding: 12px;
     width: 50%;
   }
-  .counter-box > :nth-child(2){
+  .counter-box > :nth-child(2) {
     font-size: 18px;
     text-align: center;
     font-weight: 400;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.5rem;
   }
-  .passion-box-heading{
-    font-size: 2.0rem;
-    text-transform:none;
+  .passion-box-heading {
+    font-size: 2rem;
+    text-transform: none;
   }
-} */
+}
+@media screen and (max-width: 375px) {
+  .home-heading {
+    font-size: 24px;
+  }
+  .home-heading-btn > a {
+    padding: 9px 19px;
+  }
+
+  .study-abroad-box {
+    flex-direction: column;
+  }
+  .study-abroad-box-left {
+    width: auto;
+  }
+
+  .study-abroad-box-left-heading {
+    font-size: 35px;
+    margin-top: 4rem;
+  }
+  .study-abroad-box-left-subheading {
+    font-size: 1.05rem;
+    text-align: justify;
+  }
+  .study-abroad-box-right > img {
+    width: 100vw;
+  }
+
+  .counter-container {
+    padding: 1rem 0 1rem 0;
+  }
+
+  .counter-box {
+    font-size: 2.25rem;
+  }
+  .counter-inner-box {
+    flex-wrap: wrap;
+  }
+  .counter-inner-box > div {
+    padding: 12px;
+    width: 50%;
+  }
+  .counter-box > :nth-child(2) {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    white-space: normal;
+    line-height: 1.4rem;
+  }
+  .passion-box-heading {
+    font-size: 2rem;
+    text-transform: none;
+  }
+  .mobile-reviews{
+    display: block;
+  }
+}

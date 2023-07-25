@@ -12,6 +12,7 @@ import Review from "../../components/Reviews/Review";
 import University from "./University/University";
 import Contact from "../../components/Contact/Contact";
 import Passion from "../../components/Passion/Passion";
+import Testimonials from "../../components/testimonial/Testimonials";
 const Home = () => {
   useEffect(() => {
     // Scroll to the top of the page on page load
@@ -29,7 +30,7 @@ const Home = () => {
         className=" flex justify-center items-center h-[40vh]"
       >
         <div className="flex flex-col">
-          <div className=" home-heading text-[40px] ">
+          <div className=" home-heading text-[40px] text-center ">
             <div className="font-bold text-amber-400 home-heading-content">
               Explore Diverse Learning Horizons
             </div>
@@ -39,7 +40,7 @@ const Home = () => {
             One-Stop Solution for Initiating Your University Applications
           </div>
 
-          <div className="home-heading-btn flex items-center justify-center mt-5">
+          <div className=" text-center home-heading-btn flex items-center justify-center mt-5">
             <Link class="btn" href="#">
               Get started!
             </Link>
@@ -139,6 +140,9 @@ const Home = () => {
       <br /><br />
       <Contact/>
       <Review />
+      <div className="mobile-reviews">
+        <Testimonials/>
+      </div>
       {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
 
     </div>

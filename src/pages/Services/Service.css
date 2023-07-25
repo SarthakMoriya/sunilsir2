@@ -10,3 +10,19 @@
     white-space: nowrap;
   }
 }
+@media screen and (max-width: 375px) {
+  /* .service-box-individual {
+    font-size: 14px;
+  } */
+  .service-box-individual > div > img {
+    width: 75px;
+  }
+  .service-box > div {
+    white-space: nowrap;
+    /* flex-basis: auto; */
+    font-size: 14px;
+  }
+  .service-box-individual:nth-child(2)>* {
+    font-size: 14px;
+  }
+}

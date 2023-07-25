@@ -1,8 +1,32 @@
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  .uni-box>div {
+  .uni-box > div {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50%;
+  }
+  .uni-box > div > img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .uni-box > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  .uni-box > div > img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .uni-box > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
   }
   .uni-box > div > img {
     width: 70%;

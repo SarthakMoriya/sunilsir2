@@ -1,5 +1,9 @@
-.peopleimg > img {
-  width: 100%;
+.peopleimgdesh{
+  position: absolute;
+  top: 0;
+}
+.peopleimgdesh > img {
+  width: 100vw;
   height: 50vh;
   background-size: cover;
 }
@@ -7,17 +11,18 @@
   display: none;
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .peopleimg {
+  /* .peopleimgdesh {
     position: relative;
     top: 82px;
-  }
-  .yellow-cover {
+  } */
+  /* .yellow-cover {
     height: 50vh;
     top: 155px;
-  }
+  } */
   .country-heading {
-    top: 10rem;
+    top: 0rem;
     left: 7rem;
   }
   .country-line-break {
@@ -31,14 +36,52 @@
   }
 }
 
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .country-heading {
+    top: 0rem;
+    left: 0rem;
+  }
+  /* .yellow-cover {
+    height: 38vh;
+    top: 148px;
+  } */
+  .country-main-box {
+    margin: 0;
+  }
+  .country-main-box > div {
+    flex-direction: column;
+    margin: 0;
+  }
+  .country-flag-box {
+    align-items: normal;
+    justify-content: normal;
+  }
+  .country-content-subhead {
+    font-size: 2.05rem;
+  }
+  .country-heading-2 {
+    /* display: block; */
+    flex-wrap: wrap;
+  }
+  .country-heading-2 > :nth-child(3) {
+    font-size: 2rem;
+  }
+  .country-heading-2 > :nth-child(1) {
+    font-size: 1.65rem;
+  }
+  .country-line-break {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .country-heading {
-    top: 6rem;
+    top: 2rem;
     left: 0rem;
   }
   .yellow-cover {
-    height: 37vh;
-    top: 153px;
+    height: 50vh;
+    top: 1px;
   }
   .country-main-box {
     margin: 0;
@@ -53,5 +96,20 @@
   }
   .country-content-subhead {
     font-size: 2.05rem;
+  }
+  .country-heading-2 {
+    /* display: block; */
+    flex-wrap: wrap;
+  }
+  .country-heading-2 > :nth-child(3) {
+    font-size: 2rem;
+  }
+  .country-heading-2 > :nth-child(1) {
+    font-size: 23px;
+  }
+}
+@media  screen and (min-width: 1123px) {
+  .country-line-break-xxl{
+    display: block;
   }
 }
