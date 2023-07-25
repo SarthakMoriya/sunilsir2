@@ -13,15 +13,16 @@ const ContactUs = () => {
       <br />
       <br />
       <br />
-      <div className="peopleimg flex items-center ">
+      <div className="contact-line-break"><br /><br /><br /></div>
+      <div className="peopleimgc flex items-center ">
         <img src={peopleimg} alt="" className="" />
       </div>
-      <div className="bg-amber-200 w-full h-[60vh] opacity-50 absolute top-0 flex items-center justify-center">
+      <div className="bg-amber-200 w-full h-[60vh] opacity-50 absolute top-0 flex items-center justify-center contact-yellow-cover">
         <br />
         <br />
         <br />
       </div>
-      <div className="flex-col items-center text-center opacity-100  absolute top-20 left-[24rem]  text-slate-100">
+      <div className="flex-col items-center text-center opacity-100  absolute top-20 left-[24rem]  text-slate-100 contact-content">
         <br />
         <br />
         <br />

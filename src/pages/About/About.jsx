@@ -9,6 +9,7 @@ import pp4 from "../../assets/people/pp4.jpg";
 
 import Counter from "../../components/Counter/Counter";
 import Review from "../../components/Reviews/Review";
+import Contact from "../../components/Contact/Contact";
 
 
 const About = () => {
@@ -38,7 +39,7 @@ const About = () => {
         <br />
         <h2 className="text-5xl uppercase ">Trusted Immigration Consultant</h2>
       </div>
-      <br /><br />
+      <div className="line-break"><br /><br /></div>
       {/* After Image */}
       <div className="company-banner-box">
         <div className="inner-box m-3 p-2 shadow-2xl shadow-slate-300">
@@ -78,15 +79,18 @@ const About = () => {
               <span className="font-semibold underline">
                 Infinity Immigration Consultant
               </span>
-              , our mission is to guide you on your immigration journey,
-              providing unwavering support and expertise every step of the way.
-              Our dedicated team understands the complexities of the immigration
-              process and is committed to simplifying it for you. With our
-              transparent and ethical approach, we strive to empower individuals
-              and families, helping them realize their dreams of a better future
-              in a welcoming and inclusive environment. Trust us to be your
-              reliable partner as we navigate this transformative journey
-              together.
+              <span className="mission-content-box-paragraph">
+                , our mission is to guide you on your immigration journey,
+                providing unwavering support and expertise every step of the way.
+                Our dedicated team understands the complexities of the immigration
+                process and is committed to simplifying it for you. With our
+                transparent and ethical approach, we strive to empower individuals
+                and families, helping them realize their dreams of a better future
+                in a welcoming and inclusive environment. Trust us to be your
+                reliable partner as we navigate this transformative journey
+                together.
+              </span>
+
             </div>
           </div>
         </div>
@@ -95,11 +99,11 @@ const About = () => {
       <br /><br /><br />
       {/* Team Members starts */}
       <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
-        <div className="border-b-4 border-b-amber-400 pb-2">
+        <div className="border-b-4 border-b-amber-400 pb-2 ">
           Expert Team Members
         </div>
       </div>
-      <div className="flex items-center justify-center mt-5 text-3xl">
+      <div className="flex items-center justify-center mt-5 text-3xl team-members">
         <span>Our team at {"   "}</span>{" "}
         <span className=" text-4xl font-extrabold ml-3">Your Service</span>
       </div>
@@ -166,6 +170,7 @@ const About = () => {
       {/* Review Starts */}
       <Review />
       {/* Review Ends */}
+      <Contact/>
     </div>
   );
 };

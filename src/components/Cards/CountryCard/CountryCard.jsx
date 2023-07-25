@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CountryCard = ({ cc, name, gif }) => {
     return (
-        <div class="max-w-2xl mx-auto">
+        <div class="max-w-2xl mx-auto m-2">
 
             <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 h-full">
                 <Link href="#">

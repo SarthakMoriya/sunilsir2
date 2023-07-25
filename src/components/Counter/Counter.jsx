@@ -2,19 +2,7 @@ import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { motion } from "framer-motion"
-
-const CounterBox = ({ end }) => {
-  const [counter, setCounter] = useState(false);
-  return (
-    <ScrollTrigger
-      onEnter={() => setCounter(true)}
-      onExit={() => setCounter(false)}
-    >
-      {counter && <CountUp start={0} end={end} duration={2} delay={0} />}
-    </ScrollTrigger>
-  );
-};
-
+import CounterBox from "./CounterBox";
 
 
 const Counter = ({border}) => {

@@ -89,6 +89,9 @@
     top: 7rem;
     font-size: 1rem;
   }
+  .company-banner-box {
+    justify-content: normal;
+  }
   .inner-box {
     width: auto;
   }
@@ -97,8 +100,64 @@
     position: relative;
     top: 7%;
   }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .about-heading {
+    left: 0;
+    top: 6.5rem;
+  }
+  .about-heading > h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: 500;
+  }
+  .line-break{
+    display: none;
+  }
+
   .company-banner-box {
     justify-content: normal;
+    margin-top: 0;
+  }
+  .inner-box {
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .inner-box > img {
+    height: 50vh;
+    position: relative;
+    top: 7%;
+  }
+  .mission-inner-box {
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .mission-content-box {
+    border-left: 7px solid gold;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    width: 90%;
+    height: 70%;
+    position: unset;
+    /* top: 20%; */
+    /* left: 20%; */
+    background-color: white;
+    opacity: 0.9;
+  }
+  .mission-content-box > h2 {
+    font-size: 1.2rem;
+  }
+  .mission-content-box-paragraph {
+    font-size: 14.5px;
+  }
+  .team-members > span:nth-child(1) {
+    font-size: 1.25rem;
+  }
+  .team-members > span:nth-child(2) {
+    font-size: 1.95rem;
   }
 }
 @media screen and (min-width: 850px) and (max-width: 1024px) {

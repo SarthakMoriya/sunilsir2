@@ -1,5 +1,45 @@
-.peopleimg>img{
-    width: 100%;
+.peopleimgc > img {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+}
+.contact-line-break {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .contact-line-break {
+    display: block;
+  }
+  .contact-yellow-cover{
+    top: 144px;
     height: 50vh;
-    background-size: cover;
+  }
+  .contact-content{
+    top: 7rem;
+    /* left: 1.8rem; */
+    left: calc(100% - 2rem);
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  .contact-line-break {
+    display: block;
+  }
+  .contact-yellow-cover{
+    top: 144px;
+    height: 50vh;
+  }
+  .contact-content{
+    top: 7rem;
+    left: 1.8rem;
+
+  }
+}
+
+@media screen and  (max-width: 425px) {
+    .contact-content{
+        top: 7rem;
+        /* left: 1rem; */
+    
+      }
 }
