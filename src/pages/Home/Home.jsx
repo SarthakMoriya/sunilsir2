@@ -26,7 +26,7 @@ const Home = () => {
       <motion.div className="" style={{ scaleX: scrollYProgress }} />
       <motion.div
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, }}
         className=" flex justify-center items-center h-[40vh]"
       >
         <div className="flex flex-col">
@@ -56,14 +56,18 @@ const Home = () => {
         transition={{ duration: 0.5 }}
         className="flex items-center justify-center "
       >
-        <div className="flex justify-center study-abroad-box">
+        <motion.div
+          className="flex justify-center study-abroad-box border-red ">
           <div className="content flex flex-col items-center  border  w-[40%] study-abroad-box-left">
-            <div className="font-bold text-primary text-6xl mt-[8rem] mb-5 study-abroad-box-left-heading">
-              Study Abroad
-            </div>
             <motion.div
               whileInView={{ scale: [0, 1], opacity: [0, 1] }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
+              className="font-bold text-primary text-6xl mt-[8rem] mb-5 study-abroad-box-left-heading">
+              Study Abroad
+            </motion.div>
+            <motion.div
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.5 }}
               className="text-xl p-6  study-abroad-box-left-subheading"
             >
               Unlock a world of opportunities with Infinity Immigration Consultant
@@ -76,16 +80,19 @@ const Home = () => {
               promising tomorrow.
             </motion.div>
           </div>
-          <div className="image-content study-abroad-box-right">
-            <img src={homepageimg} alt="" />
-          </div>
-        </div>
+          <motion.div
+            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100 }}
+            className="image-content study-abroad-box-right">
+            <img src={homepageimg} alt="" loading="lazy" />
+          </motion.div>
+        </motion.div>
       </motion.div>
       {/* Study abroad Ends */}
 
       <br /><br /><br /><br />
       <University />
-      <br /><br /><br /><br />
+      <br />
 
       {/* People Imgage starts*/}
       <motion.img
@@ -93,7 +100,8 @@ const Home = () => {
         transition={{ duration: 1.5, ease: "easeInOut" }}
         src={peopleimg}
         alt=""
-        className="h-[80vh] w-[100vw] contrast-100 grayscale opacity-0"
+        loading="lazy"
+        className="h-[80vh] w-[100vw]  opacity-0"
       />
       {/* People Imgage ends*/}
       <br /><br />
@@ -138,10 +146,10 @@ const Home = () => {
       {/* Select Passion Ends */}
       <Service />
       <br /><br />
-      <Contact/>
-      <Review />
-      <div className="mobile-reviews">
-        <Testimonials/>
+      <Contact />
+      {/* <Review /> */}
+      <div className="">
+        <Testimonials />
       </div>
       {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
 

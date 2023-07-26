@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -46,19 +47,31 @@ const Review = () => {
     ],
   };
   return (
-    <div className="carousal bg-slate-50 review-box-main">
-      <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
+    <motion.div
+      whileInView={{ y: [200, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5, }}
+      className="carousal bg-slate-50 review-box-main">
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1.5, }}
+        className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
         <div className="border-b-4 border-b-amber-400 pb-2">Testimonial</div>
-      </div>
-      <div className="flex items-center justify-center mt-5 text-3xl">
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 1.5, }}
+        className="flex items-center justify-center mt-5 text-3xl">
         <span className=" text-4xl font-extrabold ml-3">
           Satisfied Customers
         </span>
-      </div>
+      </motion.div>
       <br />
       <br />
       <Slider {...settings}>
-        <div className="review-box flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        <motion.div
+          whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          transition={{ type: "spring", stiffness: 100,duration:1 }}
+          className="review-box flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className="flex-1 user-info flex p-3">
             <img src={pp1} alt="user" className="rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium">
@@ -80,8 +93,11 @@ const Review = () => {
             </span>
           </div>
           <br />
-        </div>
-        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          transition={{ type: "spring", stiffness: 100,duration:1 }}
+          className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp2} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -102,8 +118,11 @@ const Review = () => {
             </span>
           </div>
           <br />
-        </div>
-        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          transition={{ type: "spring", stiffness: 100,duration:1 }}
+          className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp3} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -125,8 +144,11 @@ const Review = () => {
             </span>
           </div>
           <br />
-        </div>
-        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          transition={{ type: "spring", stiffness: 100,duration:1 }}
+          className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp4} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -148,8 +170,11 @@ const Review = () => {
             </span>
           </div>
           <br />
-        </div>
-        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          transition={{ type: "spring", stiffness: 100,duration:1 }}
+          className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp5} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -171,8 +196,11 @@ const Review = () => {
             </span>
           </div>
           <br />
-        </div>
-        <div className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
+        </motion.div>
+        <motion.div
+          whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          transition={{ type: "spring", stiffness: 100,duration:1 }}
+          className="review-box  flex flex-col box1 items-start justify-around border border-amber-400 rounded-lg shadow-xl">
           <div className=" flex-1 user-info flex p-3 ">
             <img src={pp6} alt="user" className=" rounded-full w-[30%]" />
             <div className="country flex items-center justify-center text-2xl font-medium ">
@@ -194,9 +222,9 @@ const Review = () => {
             </span>
           </div>
           <br />
-        </div>
+        </motion.div>
       </Slider>
-    </div>
+    </motion.div>
   );
 };
 

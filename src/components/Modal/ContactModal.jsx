@@ -6,7 +6,7 @@ import "./ContactModal.css";
 const ContactMOdal = ({ open,setOpen }) => {
     return (
         <div className="flex items-center justify-center">
-            <div className="container relative">
+            <div className="container relative modal-container top-[-85px]">
                 <div className="content">
                     <div className="left-side">
                         <div className="address details flex flex-col items-center justify-center">
@@ -30,7 +30,7 @@ const ContactMOdal = ({ open,setOpen }) => {
                     </div>
                     <div className="right-side">
                         <div className="topic-text text-amber-400">Send us a message</div>
-                        <p>
+                        <p className="tablet-text-fake">
                             If you have any work from me or any types of quries related to my
                             tutorial, you can send me message from here. It's my pleasure to
                             help you.
@@ -53,7 +53,7 @@ const ContactMOdal = ({ open,setOpen }) => {
                             </div>
                         </form>
                     </div>
-                    <div className="absolute top-[20px] text-xl bg-amber-400 p-3 rounded-[50%] text-white hover:text-black hover:bg-white transition-all ease-in delay-100 hover:border-4 cursor-pointer"
+                    <div className=" close-btn absolute top-[20px] text-xl bg-amber-400 p-3 rounded-[50%] text-white hover:text-black hover:bg-white transition-all ease-in delay-100 hover:border-4 cursor-pointer"
                         onClick={() => { setOpen(!open) }}
                     >
                         X

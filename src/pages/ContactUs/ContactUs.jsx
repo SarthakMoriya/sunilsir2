@@ -17,7 +17,7 @@ const ContactUs = () => {
       <div className="contact-container relative">
 
         <div className="peopleimgc flex items-center ">
-          <img src={peopleimg} alt="" className="" />
+          <img src={peopleimg} alt="" className="" loading="lazy"/>
         </div>
         <div className="bg-amber-400 w-full h-[50vh] opacity-50 absolute top-0 flex items-center justify-center contact-yellow-cover">
           <br />

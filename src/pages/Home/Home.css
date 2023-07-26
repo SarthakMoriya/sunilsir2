@@ -46,7 +46,8 @@
   }
   .study-abroad-box-right > img {
     width: 100vw;
-  }
+    height: 70vh;
+}
 
   .counter-container {
     padding: 1rem 0 1rem 0;
@@ -189,5 +190,11 @@
   }
   .mobile-reviews {
     display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-heading {
+    top: 3rem;
+    left: 6rem;
   }
 }

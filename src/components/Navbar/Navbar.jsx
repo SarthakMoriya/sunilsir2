@@ -76,10 +76,7 @@ const Navbar = () => {
           Make An Appointment
         </div>
       </div>
-      {open && <div className="">
-        <br /><br />
-        <ContactModal open={open} setOpen={setOpen} />
-      </div>}
+
       {/* Tablet Navbar */}
       <div className="tablet-navbar flex justify-around items-center bg-primary p-2">
         <div className="mr-2  cursor-pointer transition-all duration-400 ">
@@ -109,6 +106,10 @@ const Navbar = () => {
         height: '1vh',
         position: 'fixed'
       }} />
+      {open && <div className="">
+        <br /><br />
+        <ContactModal open={open} setOpen={setOpen} />
+      </div>}
     </div>
   );
 };

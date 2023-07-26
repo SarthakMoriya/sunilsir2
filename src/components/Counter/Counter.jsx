@@ -5,9 +5,11 @@ import { motion } from "framer-motion"
 import CounterBox from "./CounterBox";
 
 
-const Counter = ({border}) => {
+const Counter = ({ border }) => {
   return (
     <motion.div
+      whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+      transition={{ type: "spring", stiffness: 100, duration: 1.5, ease: "easeInOut" }}
       className="flex items-center justify-center  p-4 counter-container">
       <div className="flex justify-between w-[80%]  p-4  border-b-4 border-t-4 border-slate-200 counter-inner-box">
         <div className="flex flex-col text-6xl  counter-box">

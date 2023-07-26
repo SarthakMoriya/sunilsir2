@@ -40,9 +40,47 @@
     padding: 0.35rem;
     background-color: white;
     text-transform: none;
+    font-size: 14px;
+  }
+  .tablet-navbar>div>a{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: none;
+  }
+  .upper-navbar-link{
+    font-size: 15px;
   }
 }
-
+@media screen and (max-width: 425px)  {
+  .upper-navbar-link > img {
+    display: none;
+  }
+  .navbar-company > a {
+    white-space: normal;
+    font-size: 1rem;
+    line-height: 0rem;
+    font-weight: 700;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .navbar-links > a {
+  }
+  .navbar-links-booking {
+    padding: 0.35rem;
+    background-color: white;
+    text-transform: none;
+    font-size: 14px;
+  }
+  .tablet-navbar>div>a{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: none;
+  }
+  .upper-navbar-link{
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 1124px) {
   .navbar-links {
     display: block;
@@ -50,5 +88,4 @@
   .tablet-navbar {
     display: none;
   }
-
 }

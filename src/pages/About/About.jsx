@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { motion } from "framer-motion"
 import "./About.css";
 import peopleimg from "../../assets/peopleimage.jpg";
 import logo from "../../assets/logo.png";
@@ -33,40 +34,61 @@ const About = () => {
           <br />
         </div>
         <div className="flex-col items-center text-center opacity-100  absolute   font-bold text-slate-100 about-heading">
-        <br />
-        <br />
-        <br />
-        <h4 className="text-2xl uppercase text-black">
-          About Infinity Immigration Consultant
-        </h4>
-        <br />
-        <h2 className="text-5xl uppercase text-black">Trusted Immigration Consultant</h2>
-      </div>
+          <br />
+          <br />
+          <br />
+          <motion.h4
+            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100 }}
+            className="text-2xl uppercase text-black">
+            About Infinity Immigration Consultant
+          </motion.h4>
+          <br />
+          <motion.h2
+            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100 }}
+            className="text-5xl uppercase text-black">Trusted Immigration Consultant</motion.h2>
+        </div>
       </div>
       <div className="line-break"><br /><br /></div>
       {/* After Image */}
-      <div className="company-banner-box">
+      <motion.div
+
+        className="company-banner-box">
         <div className="inner-box m-3 p-2 shadow-2xl shadow-slate-300">
-          <img src={logo} alt="" />
+          <motion.img whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100 }} src={logo} alt="" loading="lazy" />
           <div className="company-info ">
-            <h4 className="text-3xl text-primaryDark  border-b-4 border-primary">
+            <motion.h4
+              whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ duration: .5 }}
+              className="text-3xl text-primaryDark  border-b-4 border-primary">
               About Us
-            </h4>
-            <h4 className="text-2xl uppercase py-2 ">
+            </motion.h4>
+            <motion.h4
+              whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ duration: .5 }}
+              className="text-2xl uppercase py-2 ">
               Infinity Immigration Consultant
-            </h4>
-            <h4 className="text-xl uppercase pb-2">
+            </motion.h4>
+            <motion.h4
+              whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ duration: .5 }}
+              className="text-xl uppercase pb-2">
               Don't just dream, let's make it a reality
-            </h4>
-            <h4 className="text-lg paragraph-text">
+            </motion.h4>
+            <motion.h4
+              whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ duration: .5 }}
+              className="text-lg paragraph-text">
               "Embrace the truth: You are not confined to any fixed place. Your
               essence transcends boundaries. You belong to the entire world, yet
               to no single place. Embrace this boundless belonging and step into
               your role. We stand ready, united in this shared adventure."
-            </h4>
+            </motion.h4>
           </div>
         </div>
-      </div>
+      </motion.div>
       <br /><br /><br /><br />
       {/* Mission Box starts */}
       <div className="mission-box">
@@ -102,23 +124,32 @@ const About = () => {
       {/* Mission Box Ends */}
       <br /><br /><br />
       {/* Team Members starts */}
-      <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
+      <motion.div
+        whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+        transition={{ type: "spring", stiffness: 100 }}
+        className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
         <div className="border-b-4 border-b-amber-400 pb-2 ">
           Expert Team Members
         </div>
-      </div>
-      <div className="flex items-center justify-center mt-5 text-3xl team-members">
+      </motion.div>
+      <motion.div
+        whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+        transition={{ type: "spring", stiffness: 100 }}
+        className="flex items-center justify-center mt-5 text-3xl team-members">
         <span>Our team at {"   "}</span>{" "}
         <span className=" text-4xl font-extrabold ml-3">Your Service</span>
-      </div>
+      </motion.div>
 
       <div className="team-box p-3">
         <div className="team-box p-3 flex-wrap">
           <div className="tablet-team">
 
-            <div className="team-boxes  flex justify-center items-center p-2  ">
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className="team-boxes  flex justify-center items-center p-2  ">
               <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-                <img src={pp1} alt="" />
+                <img src={pp1} alt="" loading="lazy" />
                 <div className="name font-medium text-amber-400 mt-2">
                   John Wick
                 </div>
@@ -126,23 +157,33 @@ const About = () => {
                   Founder & Managing Partner
                 </div>
               </div>
-            </div>
-            <div className="team-boxes  flex justify-center items-center p-2  ">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className="team-boxes  flex justify-center items-center p-2  ">
               <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-                <img src={pp2} alt="" />
-                <div className="name font-medium text-amber-400 mt-2">
+                <img src={pp2} alt="" loading="lazy" />
+                <motion.div
+                  initial={{ filter: 'blur(10px)' }} // Initial blur effect
+                  animate={{ filter: 'blur(0)' }} // Target blur value (no blur)
+                  transition={{ duration: 1 }} // Animation duration
+                  className="name font-medium text-amber-400 mt-2">
                   John Wick
-                </div>
+                </motion.div>
                 <div className="job-position font-bold text-zinc-700 mx-3 whitespace-nowrap">
                   Founder & Managing Partner
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="tablet-team">
-            <div className="team-boxes  flex justify-center items-center p-2  ">
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className="team-boxes  flex justify-center items-center p-2  ">
               <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-                <img src={pp3} alt="" />
+                <img src={pp3} alt="" loading="lazy" />
                 <div className="name font-medium text-amber-400 mt-2">
                   John Wick
                 </div>
@@ -150,10 +191,13 @@ const About = () => {
                   Founder & Managing Partner
                 </div>
               </div>
-            </div>
-            <div className="team-boxes  flex justify-center items-center p-2  ">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              className="team-boxes  flex justify-center items-center p-2  ">
               <div className=" flex flex-col w-full h-full items-center justify-center p-3 shadow-2xl  border-primary border-x-4 rounded-xl">
-                <img src={pp4} alt="" />
+                <img src={pp4} alt="" loading="lazy" />
                 <div className="name font-medium text-amber-400 mt-2">
                   John Wick
                 </div>
@@ -161,7 +205,7 @@ const About = () => {
                   Founder & Managing Partner
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -169,15 +213,20 @@ const About = () => {
       {/* Team Members Ends */}
       {/* Counter Starts */}
       <br /><br /><br />
-      <Counter border={"amber-400"}/>
+      <Counter border={"amber-400"} />
+      <br /><br /><br />
       {/* Counter ends */}
       {/* Review Starts */}
-      <Review />
-      <div className="mobile-reviews">
-        <Testimonials/>
+      {/* <Review /> */}
+      <div className="">
+        <Testimonials />
       </div>
+      <br /><br /><br />
+
       {/* Review Ends */}
-      <Contact/>
+      <Contact />
+      <br /><br /><br />
+
     </div>
   );
 };

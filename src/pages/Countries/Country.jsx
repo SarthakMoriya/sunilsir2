@@ -31,7 +31,7 @@ const Country = () => {
       <div className="country-line-break-xxl"></div>
       <div className="relative border">
         <div className="peopleimgdesh flex items-center ">
-          <img src={peopleimg} alt="" className="" />
+          <img src={peopleimg} alt="" className="" loading="lazy"/>
         </div>
         <div className="bg-primary w-full h-[50vh] opacity-40 absolute top-0 flex items-center justify-center yellow-cover">
           <br />
