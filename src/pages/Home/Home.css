@@ -17,7 +17,7 @@
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #f6f633;
 }
 
-.mobile-reviews{
+.mobile-reviews {
   display: none;
 }
 
@@ -126,6 +126,14 @@
     font-size: 2rem;
     text-transform: none;
   }
+  .mobile-reviews {
+    display: block;
+  }
+}
+@media screen and (min-width: 424px) and (max-width: 600px) {
+  .mobile-reviews {
+    display: block;
+  }
 }
 @media screen and (max-width: 375px) {
   .home-heading {
@@ -179,7 +187,7 @@
     font-size: 2rem;
     text-transform: none;
   }
-  .mobile-reviews{
+  .mobile-reviews {
     display: block;
   }
 }

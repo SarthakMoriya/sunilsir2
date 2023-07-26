@@ -10,6 +10,7 @@ import pp4 from "../../assets/people/pp4.jpg";
 import Counter from "../../components/Counter/Counter";
 import Review from "../../components/Reviews/Review";
 import Contact from "../../components/Contact/Contact";
+import Testimonials from "../../components/testimonial/Testimonials";
 
 
 const About = () => {
@@ -18,26 +19,29 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="relative bg-slate-100 ">
+    <div className=" bg-slate-100 ">
       <br /><br /><br />
       <br />
-      <div className="peopleimg flex items-center ">
-        <img src={peopleimg} alt="" className="" />
-      </div>
-      <div className="bg-primary w-full h-[48vh] opacity-50 absolute top-[111px] flex items-center justify-center">
+      <div className="about-line-break-mobile"><br /><br /></div>
+      <div className="about-first-div relative">
+        <div className="peopleimg flex items-center ">
+          <img src={peopleimg} alt="" className="" />
+        </div>
+        <div className="bg-primary w-full h-[50vh] opacity-50 absolute top-[0px] flex items-center justify-center about-yellow-cover">
+          <br />
+          <br />
+          <br />
+        </div>
+        <div className="flex-col items-center text-center opacity-100  absolute   font-bold text-slate-100 about-heading">
         <br />
         <br />
         <br />
-      </div>
-      <div className="flex-col items-center text-center opacity-100  absolute top-20 left-[24rem] font-bold text-slate-100 about-heading">
-        <br />
-        <br />
-        <br />
-        <h4 className="text-2xl uppercase ">
+        <h4 className="text-2xl uppercase text-black">
           About Infinity Immigration Consultant
         </h4>
         <br />
-        <h2 className="text-5xl uppercase ">Trusted Immigration Consultant</h2>
+        <h2 className="text-5xl uppercase text-black">Trusted Immigration Consultant</h2>
+      </div>
       </div>
       <div className="line-break"><br /><br /></div>
       {/* After Image */}
@@ -48,13 +52,13 @@ const About = () => {
             <h4 className="text-3xl text-primaryDark  border-b-4 border-primary">
               About Us
             </h4>
-            <h4 className="text-2xl uppercase py-2">
+            <h4 className="text-2xl uppercase py-2 ">
               Infinity Immigration Consultant
             </h4>
             <h4 className="text-xl uppercase pb-2">
               Don't just dream, let's make it a reality
             </h4>
-            <h4 className="text-lg">
+            <h4 className="text-lg paragraph-text">
               "Embrace the truth: You are not confined to any fixed place. Your
               essence transcends boundaries. You belong to the entire world, yet
               to no single place. Embrace this boundless belonging and step into
@@ -169,6 +173,9 @@ const About = () => {
       {/* Counter ends */}
       {/* Review Starts */}
       <Review />
+      <div className="mobile-reviews">
+        <Testimonials/>
+      </div>
       {/* Review Ends */}
       <Contact/>
     </div>

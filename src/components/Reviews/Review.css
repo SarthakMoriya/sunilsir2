@@ -17,7 +17,7 @@
 .slick-slide div {
   margin: 0 1rem;
 }
-.slick-slider>button{
+.slick-slider > button {
   /* background-color: black; */
   padding: 1px;
   width: 23px;
@@ -35,21 +35,26 @@
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  .review>span{
+  .review > span {
     font-size: 16px;
   }
-  .review-desc>span{
+  .review-desc > span {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 375px)  {
-  .review>span{
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .review-box-main {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .review > span {
     font-size: 16px;
   }
-  .review-desc>span{
+  .review-desc > span {
     font-size: 14px;
   }
-  .review-box{
+  .review-box-main {
     display: none;
   }
 }

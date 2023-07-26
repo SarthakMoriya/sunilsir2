@@ -11,35 +11,31 @@
   .contact-line-break {
     display: block;
   }
-  .contact-yellow-cover{
-    top: 144px;
-    height: 50vh;
-  }
-  .contact-content{
+
+  .contact-content {
     top: 7rem;
-    /* left: 1.8rem; */
-    left: calc(100% - 2rem);
+    left: 8rem;
+    
   }
 }
 @media screen and (max-width: 768px) and (min-width: 425px) {
   .contact-line-break {
     display: block;
   }
-  .contact-yellow-cover{
-    top: 144px;
-    height: 50vh;
-  }
-  .contact-content{
-    top: 7rem;
-    left: 1.8rem;
-
+  .contact-content {
+    top: 4rem;
+    left: 1rem;
   }
 }
 
-@media screen and  (max-width: 425px) {
-    .contact-content{
-        top: 7rem;
-        /* left: 1rem; */
-    
-      }
+@media screen and (max-width: 425px) {
+  .contact-content {
+    top: 4rem;
+    left: 1rem;
+  }
+  .contact-line-break {
+    display: block;
+  }
+
+
 }

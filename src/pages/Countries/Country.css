@@ -1,4 +1,4 @@
-.peopleimgdesh{
+.peopleimgdesh {
   position: absolute;
   top: 0;
 }
@@ -10,7 +10,6 @@
 .country-line-break {
   display: none;
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* .peopleimgdesh {
@@ -107,9 +106,12 @@
   .country-heading-2 > :nth-child(1) {
     font-size: 23px;
   }
+  .cc-counter-text {
+    font-size: 1rem;
+  }
 }
-@media  screen and (min-width: 1123px) {
-  .country-line-break-xxl{
+@media screen and (min-width: 1123px) {
+  .country-line-break-xxl {
     display: block;
   }
 }

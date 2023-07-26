@@ -1,7 +1,36 @@
 @media screen and (min-width: 425px) and (max-width: 768px) {
-  .passion-box {
+  /* .passion-box {
     max-width: calc(100% / 2);
     box-sizing: border-box;
     font-size: 16px;
+  } */
+  .passion-container{
+    flex-direction: column;
+  }
+  .passion-box {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+}
+
+@media  screen and (max-width:425px){
+  .passion-container{
+    flex-direction: column;
+  }
+  .passion-box {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+}
+@media  screen and (min-width:597px){
+  .passion-container{
+    flex-direction: row;
+  }
+  .passion-box {
+    width: 100%;
+    font-size: 16px;
+    margin-left: 7px;
   }
 }

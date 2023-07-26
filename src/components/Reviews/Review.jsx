@@ -46,7 +46,7 @@ const Review = () => {
     ],
   };
   return (
-    <div className="carousal bg-slate-50 review-box">
+    <div className="carousal bg-slate-50 review-box-main">
       <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
         <div className="border-b-4 border-b-amber-400 pb-2">Testimonial</div>
       </div>

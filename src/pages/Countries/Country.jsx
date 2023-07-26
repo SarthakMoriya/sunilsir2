@@ -74,7 +74,7 @@ const Country = () => {
             </div>
             <div className="flex items-center justify-center mt-5 ">
               <img className=" p-3 font-light ml-3 w-[100px]" src={globe} alt='globe' />
-              <div className="flex justify-center items-center text-lg font-medium ">
+              <div className="flex justify-center items-center text-lg font-medium cc-counter-text">
                 <CounterBox end={15} />+ Countries Served
               </div>
             </div>

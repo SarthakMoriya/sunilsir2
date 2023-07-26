@@ -117,7 +117,7 @@ const Home = () => {
       <motion.div
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
-        className="flex items-center justify-center p-4 text-center flex-wrap">
+        className="flex items-center justify-center p-4 text-center passion-container ">
         <Passion name={"Science"} />
         <Passion name={"Accountancy"} />
         <Passion name={"Engineering"} />
@@ -126,7 +126,7 @@ const Home = () => {
       <motion.div
         whileInView={{ y: [200, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
-        className="flex items-center justify-center p-4 text-center flex-wrap">
+        className="flex items-center justify-center p-4 text-center passion-container">
         <Passion name={"Economics"} />
         <Passion name={"Biotechnology"} />
         <Passion name={"Finance"} />

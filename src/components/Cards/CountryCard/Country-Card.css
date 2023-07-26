@@ -1,5 +1,8 @@
 @media screen and (max-width: 425px) {
-    .cc{
-        width: 22rem;
-    }
+  .cc {
+    width: 19rem;
+  }
+  .cc-text {
+    font-size: 14px;
+  }
 }

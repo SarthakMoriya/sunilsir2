@@ -14,31 +14,33 @@ const ContactUs = () => {
       <br />
       <br />
       <div className="contact-line-break"><br /><br /><br /></div>
-      <div className="peopleimgc flex items-center ">
-        <img src={peopleimg} alt="" className="" />
+      <div className="contact-container relative">
+
+        <div className="peopleimgc flex items-center ">
+          <img src={peopleimg} alt="" className="" />
+        </div>
+        <div className="bg-amber-400 w-full h-[50vh] opacity-50 absolute top-0 flex items-center justify-center contact-yellow-cover">
+          <br />
+          <br />
+          <br />
+        </div>
+        <div className="flex-col items-center text-center opacity-100  absolute   text-slate-100 contact-content top-[6rem]
+    left-[16rem]">
+          <h4 className="text-2xl uppercase font-md text-slate-200">
+            Get in touch with us
+          </h4>
+          <br />
+          <h2 className="text-5xl uppercase  text-black">You've come to <span className="text-slate-200 font-bold">right place</span></h2>
+        </div>
       </div>
-      <div className="bg-amber-200 w-full h-[60vh] opacity-50 absolute top-0 flex items-center justify-center contact-yellow-cover">
-        <br />
-        <br />
-        <br />
-      </div>
-      <div className="flex-col items-center text-center opacity-100  absolute top-20 left-[24rem]  text-slate-100 contact-content">
-        <br />
-        <br />
-        <br />
-        <h4 className="text-2xl uppercase font-md text-salte-200">
-          Get in touch with us
-        </h4>
-        <br />
-        <h2 className="text-5xl uppercase  text-black">You've come to <span className="text-slate-200 font-bold">right place</span></h2>
-      </div>
+
       <br /><br />
       <div className="flex flex-col items-center justify-center ">
         <Contact />
       </div>
       <br /><br /><br /><br />
       <div className="mt-4 mb-4 shadow-xl">
-      <GoogleMap/>
+        <GoogleMap />
       </div>
     </div>
   );

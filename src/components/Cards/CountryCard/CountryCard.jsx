@@ -18,9 +18,9 @@ const CountryCard = ({ cc, name, gif }) => {
                         <h5 class=" text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">{name}</h5>
                     </Link>
                     <p class="font-normal text-gray-700 mb-3 dark:text-gray-400 flex  justify-around">
-                        <div className='rounded-lg  p-1 '>#studentvisa</div>
-                        <div className='rounded-lg  p-1'>#touristvisa</div>
-                        <div className='rounded-lg  p-1'>#businessvisa</div>
+                        <div className='rounded-lg  p-1  cc-text'>#studentvisa</div>
+                        <div className='rounded-lg  p-1 cc-text'>#touristvisa</div>
+                        <div className='rounded-lg  p-1 cc-text'>#businessvisa</div>
                     </p>
 
                 </div>
