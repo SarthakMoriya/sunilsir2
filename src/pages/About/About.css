@@ -88,10 +88,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about-heading {
-    left: 9rem;
-    top: 7rem;
+    top: 1rem;
     font-size: 1rem;
-  }
+}
   .company-banner-box {
     justify-content: normal;
   }
@@ -106,8 +105,8 @@
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
   .about-heading {
-    left: 0;
-    top: 0;
+ 
+    top: 1rem;
   }
   .about-heading > h2 {
     font-size: 2.5rem;
@@ -165,7 +164,7 @@
 }
 @media screen and (min-width: 850px) and (max-width: 1024px) {
   .about-heading {
-    left: 7rem;
+
     top: 2rem;
     font-size: 1rem;
   }
@@ -176,8 +175,8 @@
     height: 50vh;
   }
   .about-heading {
-    left: 0;
-    top: 0;
+
+    top: 1rem;
   }
   .about-heading > h2 {
     font-size: 2.5rem;
@@ -243,7 +242,7 @@
     height: 50vh;
   }
   .about-heading {
-    top: -2rem;
+    top: 0;
     left: 0;
   }
   .about-heading > h2 {
@@ -306,5 +305,10 @@
   }
   .team-members > span:nth-child(2) {
     font-size: 1.95rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-heading {
+    top: 3rem;
   }
 }

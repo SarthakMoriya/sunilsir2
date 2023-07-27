@@ -15,7 +15,6 @@
   .contact-content {
     top: 7rem;
     left: 8rem;
-    
   }
 }
 @media screen and (max-width: 768px) and (min-width: 425px) {
@@ -36,6 +35,20 @@
   .contact-line-break {
     display: block;
   }
+}
 
+@media screen and (min-width: 1024px) {
+  .contact-heading {
+    top: 8rem;
+    left: 8rem;
+  }
+  .contact-line-break {
+    display: block;
+  }
+}
 
+@media screen and (min-width: 1123px) {
+  .contact-line-break {
+    display: none;
+  }
 }

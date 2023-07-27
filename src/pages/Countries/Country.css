@@ -22,7 +22,6 @@
   } */
   .country-heading {
     top: 0rem;
-    left: 7rem;
   }
   .country-line-break {
     display: block;
@@ -75,7 +74,7 @@
 
 @media screen and (max-width: 425px) {
   .country-heading {
-    top: 2rem;
+    top: 0;
     left: 0rem;
   }
   .yellow-cover {

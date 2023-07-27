@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { motion } from "framer-motion";
 import './Country.css'
 import peopleimg from "../../assets/peopleimage.jpg";
 import flag from '../../assets/flags.webp'
@@ -22,6 +23,10 @@ import CounterBox from '../../components/Counter/CounterBox';
 import Contact from '../../components/Contact/Contact';
 
 const Country = () => {
+  useEffect(() => {
+    // Scroll to the top of the page on page load
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <br />
@@ -31,14 +36,14 @@ const Country = () => {
       <div className="country-line-break-xxl"></div>
       <div className="relative border">
         <div className="peopleimgdesh flex items-center ">
-          <img src={peopleimg} alt="" className="" loading="lazy"/>
+          <img src={peopleimg} alt="" className="" loading="lazy" />
         </div>
         <div className="bg-primary w-full h-[50vh] opacity-40 absolute top-0 flex items-center justify-center yellow-cover">
           <br />
           <br />
           <br />
         </div>
-        <div className="text-center flex-col items-center  opacity-100  absolute top-20 left-[24rem]  text-slate-100 country-heading">
+        <div className="h-[50vh] w-[100vw] text-center flex-col items-center  opacity-100  absolute   text-slate-100 country-heading">
           <br />
           <br />
           <br />
@@ -58,39 +63,60 @@ const Country = () => {
       <div className="flex items-center justify-center ml-10 mr-10 shadow-2xl p-3 country-main-box">
         <div className="flex ml-10 mr-10 border">
           <div className="image flex-1 p-3 shadow-xl rounded-lg ">
-            <img src={flag} alt="" />
+
+            <motion.img
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: "easeInOut" }} src={flag} alt="" />
           </div>
           <div className="flag-content flex-1 country-flag-box">
-            <div className="text-center flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
+            <motion.div
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="text-center flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
               <div className="border-b-4 border-b-amber-400 pb-2">
                 Countries we offer
               </div>
-            </div>
-            <div className="flex items-center justify-center mt-5 text-3xl">
+            </motion.div>
+            <motion.div
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="flex items-center justify-center mt-5 text-3xl">
               <span className=" text-4xl font-light ml-3 country-content-subhead text-center">Visa for <span className='capitalize text-4xl font-semibold whitespace-nowrap'>any Country</span> </span>
-            </div>
-            <div className="flex items-center justify-center mt-5 text-center">
+            </motion.div>
+            <motion.div
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="flex items-center justify-center mt-5 text-center">
               <span className=" p-3 font-light ml-3"> <span className='font-light text-amber-400 ml-0 p-0 text-lg'>"</span> Embark on international journeys with our  comprehensive <br /> visa services, covering multiple countries." </span>
-            </div>
-            <div className="flex items-center justify-center mt-5 ">
+            </motion.div>
+            <motion.div
+              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="flex items-center justify-center mt-5 ">
               <img className=" p-3 font-light ml-3 w-[100px]" src={globe} alt='globe' />
               <div className="flex justify-center items-center text-lg font-medium cc-counter-text">
                 <CounterBox end={15} />+ Countries Served
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
       <div className="p-4"><hr /></div>
-      <div className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
+      <motion.div
+        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold ">
         <div className="border-b-4 border-b-amber-400 pb-2">
           Countries we offer support
         </div>
-      </div>
-      <div className="flex items-center justify-center mt-5 text-3xl country-heading-2 text-center">
+      </motion.div>
+      <motion.div
+        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex items-center justify-center mt-5 text-3xl country-heading-2 text-center">
         <span>Immigration & Visa Services {"   "}</span>{" "} <br />
         <span className=" text-4xl font-extrabold ml-3">Following Countries</span>
-      </div>
+      </motion.div>
       <br /><br /><br />
       <div className="flex flex-wrap country-card">
         <CountryCard cc={canada} name={"Canada"} gif={cngif} className="flex-1 " />

@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.container .content .left-side {
+.container .content .left-sidecm {
   width: 25%;
   height: 100%;
   display: flex;
@@ -22,7 +22,7 @@
   margin-top: 15px;
   position: relative;
 }
-.content .left-side::before {
+.content .left-sidecm::before {
   content: "";
   position: absolute;
   height: 70%;
@@ -32,21 +32,21 @@
   transform: translateY(-50%);
   background: #afafb6;
 }
-.content .left-side .details {
+.content .left-sidecm .details {
   margin: 14px;
   text-align: center;
 }
-.content .left-side .details img {
+.content .left-sidecm .details img {
   width: 24px;
   color: #3e2093;
   margin-bottom: 10px;
 }
-.content .left-side .details .topic {
+.content .left-sidecm .details .topic {
   font-size: 18px;
   font-weight: 500;
 }
-.content .left-side .details .text-one,
-.content .left-side .details .text-two {
+.content .left-sidecm .details .text-one,
+.content .left-sidecm .details .text-two {
   font-size: 14px;
   color: #afafb6;
 }
@@ -118,14 +118,14 @@
   .container .content {
     flex-direction: column-reverse;
   }
-  .container .content .left-side {
+  .container .content .left-sidecm {
     width: 100%;
     flex-direction: row;
     margin-top: 40px;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .container .content .left-side::before {
+  .container .content .left-sidecm::before {
     display: none;
   }
   .container .content .right-side {
@@ -141,7 +141,7 @@
   .modal-container {
     top: -100px;
   }
-  .left-side {
+  .left-sidecm {
     display: none !important;
   }
   .close-btn {
@@ -156,7 +156,7 @@
   .modal-container {
     top: -100px;
   }
-  .left-side {
+  .left-sidecm {
     display: none !important;
   }
   .close-btn {
@@ -171,7 +171,7 @@
   .modal-container {
     top: -100px;
   }
-  .left-side {
+  .left-sidecm {
     display: none !important;
   }
   .close-btn {
@@ -186,7 +186,7 @@
   .modal-container {
     top: -100px;
   }
-  .left-side {
+  .left-sidecm {
     display: none !important;
   }
   .close-btn {
@@ -201,7 +201,7 @@
   .modal-container {
     top: -100px;
   }
-  .left-side {
+  .left-sidecm {
     display: none !important;
   }
   .close-btn {

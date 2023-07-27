@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
-import Contact from "../../components/Contact/Contact";
+import { motion } from "framer-motion"
+
 import "./ContactUs.css";
+import Contact from "../../components/Contact/Contact";
 import peopleimg from "../../assets/peopleimage.jpg";
 import GoogleMap from "../../components/GoogleMap/Googlemap";
+
 const ContactUs = () => {
   useEffect(() => {
     // Scroll to the top of the page on page load
@@ -15,22 +18,29 @@ const ContactUs = () => {
       <br />
       <div className="contact-line-break"><br /><br /><br /></div>
       <div className="contact-container relative">
-
-        <div className="peopleimgc flex items-center ">
-          <img src={peopleimg} alt="" className="" loading="lazy"/>
-        </div>
-        <div className="bg-amber-400 w-full h-[50vh] opacity-50 absolute top-0 flex items-center justify-center contact-yellow-cover">
+        <motion.div className="peopleimgc flex items-center ">
+          <img src={peopleimg} alt="" className="" loading="lazy" />
+        </motion.div>
+        <motion.div className="bg-amber-400 w-full h-[50vh] opacity-50 absolute top-0 flex items-center justify-center contact-yellow-cover">
           <br />
           <br />
           <br />
-        </div>
-        <div className="flex-col items-center text-center opacity-100  absolute   text-slate-100 contact-content top-[6rem]
-    left-[16rem]">
-          <h4 className="text-2xl uppercase font-md text-slate-200">
+        </motion.div>
+        <div className="h-[50vh] w-[100vw] flex-col items-center text-center opacity-100  absolute   font-bold text-slate-100 about-heading">
+          <br />
+          <br />
+          <br />
+          <motion.h4
+            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100 }}
+            className="text-2xl uppercase text-black">
             Get in touch with us
-          </h4>
+          </motion.h4>
           <br />
-          <h2 className="text-5xl uppercase  text-black">You've come to <span className="text-slate-200 font-bold">right place</span></h2>
+          <motion.h2
+            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100 }}
+            className="text-5xl uppercase text-black">You've come to <span className="text-slate-200 font-bold">right place</span></motion.h2>
         </div>
       </div>
 

@@ -8,11 +8,13 @@ import peopleimg from "../../assets/homepeopleimg.jpg";
 
 import homepageimg from "../../assets/homepageimg.jpg";
 import Service from "../Services/Service";
-import Review from "../../components/Reviews/Review";
+// import Review from "../../components/Reviews/Review";
 import University from "./University/University";
 import Contact from "../../components/Contact/Contact";
 import Passion from "../../components/Passion/Passion";
 import Testimonials from "../../components/testimonial/Testimonials";
+import GoToTop from "../../components/GoToTop/GoToTop";
+import Whatsapp from "../../components/GoToTop/Whatsapp.jsx";
 const Home = () => {
   useEffect(() => {
     // Scroll to the top of the page on page load
@@ -152,6 +154,10 @@ const Home = () => {
         <Testimonials />
       </div>
       {/* <a href="https://api.whatsapp.com/send?phone=8544875229&text=Hello%20there!">Send Message on WhatsApp</a> */}
+      <div className="flex items-center justify-between up-arrow">
+        <GoToTop />
+        <Whatsapp />
+      </div>
 
     </div>
   );

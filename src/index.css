@@ -2,21 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: black;
   border-radius: 5px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 5px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: white;
   border-radius: 5px;
+}
+.up-arrow {
+  position: fixed;
+  bottom: 0;
+}
+.whatspp {
+  position: fixed;
+  top: 100px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .up-arrow {
+    position: fixed;
+    bottom: 0px;
+    width: 98vw;
+  }
+  .up-arrow > div > img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .up-arrow {
+    position: fixed;
+    bottom: 0px;
+    width: 98vw;
+  }
+  .up-arrow > div > img {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .up-arrow {
+    position: fixed;
+    bottom: 0px;
+    width: 98vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .up-arrow {
+    position: fixed;
+    bottom: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .up-arrow {
+    position: fixed;
+    bottom: 0px;
+    width: 98vw;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .up-arrow {
+    position: fixed;
+    bottom: 0px;
+    width: 97vw;
+  }
 }

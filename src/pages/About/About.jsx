@@ -33,21 +33,21 @@ const About = () => {
           <br />
           <br />
         </div>
-        <div className="flex-col items-center text-center opacity-100  absolute   font-bold text-slate-100 about-heading">
+        <div className="h-[50vh] w-[100vw] flex-col items-center text-center opacity-100  absolute   font-bold text-slate-100 about-heading">
           <br />
           <br />
           <br />
           <motion.h4
-            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
-            transition={{ type: "spring", stiffness: 100 }}
+            whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ duration: .5 }}
             className="text-2xl uppercase text-black">
             About Infinity Immigration Consultant
           </motion.h4>
           <br />
           <motion.h2
-            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
-            transition={{ type: "spring", stiffness: 100 }}
-            className="text-5xl uppercase text-black">Trusted Immigration Consultant</motion.h2>
+            whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ duration: .5 }}
+            className="text-4xl uppercase text-black">Trusted Immigration Consultant</motion.h2>
         </div>
       </div>
       <div className="line-break"><br /><br /></div>

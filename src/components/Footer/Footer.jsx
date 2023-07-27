@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -6,7 +7,8 @@ const Footer = () => {
     <footer class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
         <div class="lg:flex lg:items-start lg:gap-8">
-          <div class="text-amber-400">
+          <motion.div whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="text-amber-400">
             <svg
               class="h-8"
               viewBox="0 0 28 24"
@@ -18,22 +20,24 @@ const Footer = () => {
                 fill="currentColor"
               />
             </svg>
-          </div>
+          </motion.div>
 
           <div class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
-            <div class="col-span-2">
+            <motion.div whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="col-span-2">
               <div>
                 <h2 class="text-2xl font-bold text-gray-900">
                   Infinity Immigration Consultant
                 </h2>
 
                 <p class="mt-4 text-gray-500">
-                DON'T JUST DREAM, LET'S MAKE IT A REALITY
+                  DON'T JUST DREAM, LET'S MAKE IT A REALITY
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
+            <motion.div whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
               <form class="w-full">
                 <label for="UserEmail" class="sr-only">
                   {" "}
@@ -53,56 +57,80 @@ const Footer = () => {
                   </button>
                 </div>
               </form>
-            </div>
+            </motion.div>
 
             <div class="col-span-2 sm:col-span-1">
               <p class="font-medium text-gray-900">Countries</p>
 
               <ul class="mt-6 space-y-4 text-sm">
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in Canada
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in Dubai
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in Australia
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in Malaysia
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in Singapore
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in New Zealand
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in UK
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
                     Study in USA
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </div>
 
@@ -110,38 +138,56 @@ const Footer = () => {
               <p class="font-medium text-gray-900">Services</p>
 
               <ul class="mt-6 space-y-4 text-sm">
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Migration VIsa
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Tourist Visa
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Business Visa
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Residence Visa
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Family Visa
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Student Visa
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </div>
 
@@ -149,23 +195,32 @@ const Footer = () => {
               <p class="font-medium text-gray-900">Quick Links</p>
 
               <ul class="mt-6 space-y-4 text-sm">
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link href="#" class="text-gray-700 transition hover:text-amber-400">
                     Contact
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     Home
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
-                   About Us
+                    About Us
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </div>
 
@@ -173,23 +228,32 @@ const Footer = () => {
               <p class="font-medium text-gray-900">Contact</p>
 
               <ul class="mt-6 space-y-4 text-sm">
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     +91 12345667890
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     +91 78945611230
                   </Link>
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li
+                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+                >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
                     22b new kangra colony,sector12 chandigrah
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </div>
 
@@ -212,7 +276,10 @@ const Footer = () => {
             </div> */}
 
             <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
-              <li>
+              <motion.li
+                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+              >
                 <Link
                   to="/"
                   rel="noreferrer"
@@ -234,9 +301,12 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-              </li>
+              </motion.li>
 
-              <li>
+              <motion.li
+                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+              >
                 <Link
                   to="/"
                   rel="noreferrer"
@@ -258,7 +328,7 @@ const Footer = () => {
                     />
                   </svg>
                 </Link>
-              </li>
+              </motion.li>
 
               {/* <li>
                 <a
@@ -333,28 +403,38 @@ const Footer = () => {
 
         <div class="mt-8 border-t border-gray-100 pt-8">
           <div class="sm:flex sm:justify-between">
-            <p class="text-xs text-gray-500">
+            <motion.p whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+              transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="text-xs text-gray-500">
               &copy; 2022. Infinity Immigration Consultant. All rights reserved.
-            </p>
+            </motion.p>
 
             <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
-              <li>
-                <Link  class="text-gray-500 transition hover:opacity-75">
+              <motion.li
+                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+              >
+                <Link class="text-gray-500 transition hover:opacity-75">
                   Terms & Conditions
                 </Link>
-              </li>
+              </motion.li>
 
-              <li>
-                <Link  class="text-gray-500 transition hover:opacity-75">
+              <motion.li
+                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+              >
+                <Link class="text-gray-500 transition hover:opacity-75">
                   Privacy Policy
                 </Link>
-              </li>
+              </motion.li>
 
-              <li>
-                <Link  class="text-gray-500 transition hover:opacity-75">
+              <motion.li
+                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
+              >
+                <Link class="text-gray-500 transition hover:opacity-75">
                   Cookies
                 </Link>
-              </li>
+              </motion.li>
             </ul>
           </div>
         </div>
