@@ -62,13 +62,13 @@ const Home = () => {
           className="flex justify-center study-abroad-box border-red ">
           <div className="content flex flex-col items-center  border  w-[40%] study-abroad-box-left">
             <motion.div
-              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              whileInView={{ scale: [0, .99], opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="font-bold text-primary text-6xl mt-[8rem] mb-5 study-abroad-box-left-heading">
               Study Abroad
             </motion.div>
             <motion.div
-              whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+              whileInView={{ scale: [0, .9], opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="text-xl p-6  study-abroad-box-left-subheading"
             >
@@ -82,12 +82,13 @@ const Home = () => {
               promising tomorrow.
             </motion.div>
           </div>
-          <motion.div
-            whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
-            transition={{ type: "spring", stiffness: 100 }}
+          <div
             className="image-content study-abroad-box-right">
-            <img src={homepageimg} alt="" loading="lazy" />
-          </motion.div>
+            <img
+              src={homepageimg}
+              alt=""
+              loading="lazy" />
+          </div>
         </motion.div>
       </motion.div>
       {/* Study abroad Ends */}

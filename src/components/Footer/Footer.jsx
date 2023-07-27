@@ -7,7 +7,7 @@ const Footer = () => {
     <footer class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
         <div class="lg:flex lg:items-start lg:gap-8">
-          <motion.div whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+          <motion.div whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
             transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="text-amber-400">
             <svg
               class="h-8"
@@ -23,7 +23,7 @@ const Footer = () => {
           </motion.div>
 
           <div class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
-            <motion.div whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            <motion.div whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
               transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="col-span-2">
               <div>
                 <h2 class="text-2xl font-bold text-gray-900">
@@ -36,7 +36,7 @@ const Footer = () => {
               </div>
             </motion.div>
 
-            <motion.div whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            <motion.div whileInView={{ scale: [0, .9], opacity: [0, 1] }}
               transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="col-span-2 lg:col-span-3 lg:flex lg:items-end">
               <form class="w-full">
                 <label for="UserEmail" class="sr-only">
@@ -64,7 +64,7 @@ const Footer = () => {
 
               <ul class="mt-6 space-y-4 text-sm">
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -73,7 +73,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -82,7 +82,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -91,7 +91,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -100,7 +100,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -108,7 +108,7 @@ const Footer = () => {
                   </Link>
                 </motion.li>
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -116,7 +116,7 @@ const Footer = () => {
                   </Link>
                 </motion.li>
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -124,7 +124,7 @@ const Footer = () => {
                   </Link>
                 </motion.li>
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-800 transition hover:text-amber-400">
@@ -139,7 +139,7 @@ const Footer = () => {
 
               <ul class="mt-6 space-y-4 text-sm">
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -148,7 +148,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -157,7 +157,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -165,7 +165,7 @@ const Footer = () => {
                   </Link>
                 </motion.li>
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -173,7 +173,7 @@ const Footer = () => {
                   </Link>
                 </motion.li>
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -181,7 +181,7 @@ const Footer = () => {
                   </Link>
                 </motion.li>
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -196,7 +196,7 @@ const Footer = () => {
 
               <ul class="mt-6 space-y-4 text-sm">
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link href="#" class="text-gray-700 transition hover:text-amber-400">
@@ -205,7 +205,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -214,7 +214,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -229,7 +229,7 @@ const Footer = () => {
 
               <ul class="mt-6 space-y-4 text-sm">
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -238,7 +238,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -247,7 +247,7 @@ const Footer = () => {
                 </motion.li>
 
                 <motion.li
-                  whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                  whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                   transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
                 >
                   <Link to='/' class="text-gray-700 transition hover:text-amber-400">
@@ -277,7 +277,7 @@ const Footer = () => {
 
             <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
               <motion.li
-                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                 transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
               >
                 <Link
@@ -304,7 +304,7 @@ const Footer = () => {
               </motion.li>
 
               <motion.li
-                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                 transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
               >
                 <Link
@@ -403,14 +403,14 @@ const Footer = () => {
 
         <div class="mt-8 border-t border-gray-100 pt-8">
           <div class="sm:flex sm:justify-between">
-            <motion.p whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+            <motion.p whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
               transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }} class="text-xs text-gray-500">
               &copy; 2022. Infinity Immigration Consultant. All rights reserved.
             </motion.p>
 
             <ul class="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
               <motion.li
-                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                 transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
               >
                 <Link class="text-gray-500 transition hover:opacity-75">
@@ -419,7 +419,7 @@ const Footer = () => {
               </motion.li>
 
               <motion.li
-                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                 transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
               >
                 <Link class="text-gray-500 transition hover:opacity-75">
@@ -428,7 +428,7 @@ const Footer = () => {
               </motion.li>
 
               <motion.li
-                whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+                whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
                 transition={{ type: "spring", stiffness: 100, duration: 0.5, ease: "easeInOut" }}
               >
                 <Link class="text-gray-500 transition hover:opacity-75">

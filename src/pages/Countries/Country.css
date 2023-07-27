@@ -12,14 +12,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* .peopleimgdesh {
-    position: relative;
-    top: 82px;
-  } */
-  /* .yellow-cover {
-    height: 50vh;
-    top: 155px;
-  } */
+
   .country-heading {
     top: 0rem;
   }
@@ -74,7 +67,7 @@
 
 @media screen and (max-width: 425px) {
   .country-heading {
-    top: 0;
+    top: 14px;
     left: 0rem;
   }
   .yellow-cover {

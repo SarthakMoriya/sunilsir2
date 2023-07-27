@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 const Googlemap = () => {
   return (
     <motion.div
-      whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
+      whileInView={{ scale: [0, .9,], opacity: [0, 1] }}
       transition={{ type: "spring", stiffness: 100 }}
       className="">
       <iframe

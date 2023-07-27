@@ -17,28 +17,28 @@ const University = () => {
 
       <div className="flex items-center justify-around  flex-wrap uni-box">
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
           <img src={uni1} alt="" />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
           <img src={uni2} alt="" />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
           <img src={uni3} alt="" />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
@@ -47,28 +47,28 @@ const University = () => {
       </div>
       <div className="flex items-center justify-around  flex-wrap uni-box">
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
           <img src={uni5} alt="" />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
           <img src={uni6} alt="" />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
           <img src={uni7} alt="" />
         </motion.div>
         <motion.div
-          whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+          whileInView={{ scale: [0, .8,], opacity: [0, 1] }}
           transition={{ duration: 0.5, ease: "easeInOut", type: "spring", stiffness: 100 }}
           className=""
         >
