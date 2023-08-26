@@ -1,8 +1,30 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 900px) {
   .cc {
     width: 19rem;
   }
+
   .cc-text {
-    font-size: 14px;
+    display: none;
+    font-size: 12px;
   }
+
+  .slick-slide div {
+    margin: 0 2rem;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .cc {
+    width: 19rem;
+  }
+
+  .cc-text {
+    font-size: 12px;
+  }
+
+  /* .slick-slide div {
+    margin: 0 1rem;
+  } */
+
 }

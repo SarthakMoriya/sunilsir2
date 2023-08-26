@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./Country-Card.css";
 
+
 const CountryCard = ({ cc, name, gif }) => {
   return (
-    <motion.div
+    <div
       whileInView={{ scale: [0, 1], opacity: [0, 1] }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className="max-w-2xl mx-auto m-2 cc"
@@ -19,7 +20,7 @@ const CountryCard = ({ cc, name, gif }) => {
           />
         </Link>
         <div className="flex items-center justify-center">
-          <motion.img
+          <img
             whileInView={{ scale: [0, 1], opacity: [0, 1] }}
             transition={{
               duration: 2.5,
@@ -32,20 +33,20 @@ const CountryCard = ({ cc, name, gif }) => {
             className="w-[112px] h-[84px] object-contain mb-3 "
           />
         </div>
-        <div className="pl-5 pr-5 pt-3 pb-2">
+        <div className="sm:pl-5 sm:pr-5 sm:pt-3 sm:pb-2">
           <Link href="#">
             <h5 className=" text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
               {name}
             </h5>
           </Link>
-          <div className="font-normal text-gray-700 mb-3 dark:text-gray-400 flex  justify-around">
-            <div className="rounded-lg  p-1  cc-text">#studentvisa</div>
-            <div className="rounded-lg  p-1 cc-text">#touristvisa</div>
-            <div className="rounded-lg  p-1 cc-text">#businessvisa</div>
+          <div className="font-normal text-gray-700 mb-3 dark:text-gray-400 flex justify-center  text-sm ">
+            <div className="rounded-lg   pl-2 cc-text">#studentvisa</div>
+            <div className="rounded-lg  pl-2 cc-text">#touristvisa</div>
+            <div className="rounded-lg  pl-1 cc-text">#businessvisa</div>
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

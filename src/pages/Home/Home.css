@@ -1,3 +1,10 @@
+.bg-logoimg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)), url('../../assets/homepage-intro.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.1; */
+}
 
 .btn {
   display: inline-block;
