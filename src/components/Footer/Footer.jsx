@@ -87,7 +87,7 @@ const Footer = () => {
               <p className="font-medium text-gray-900">Countries</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -102,9 +102,9 @@ const Footer = () => {
                   >
                     Study in Canada
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -119,9 +119,9 @@ const Footer = () => {
                   >
                     Study in Dubai
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -136,9 +136,9 @@ const Footer = () => {
                   >
                     Study in Australia
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -153,9 +153,9 @@ const Footer = () => {
                   >
                     Study in Malaysia
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -170,8 +170,8 @@ const Footer = () => {
                   >
                     Study in Singapore
                   </Link>
-                </motion.li>
-                <motion.li
+                </li>
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -186,8 +186,8 @@ const Footer = () => {
                   >
                     Study in New Zealand
                   </Link>
-                </motion.li>
-                <motion.li
+                </li>
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -202,8 +202,8 @@ const Footer = () => {
                   >
                     Study in UK
                   </Link>
-                </motion.li>
-                <motion.li
+                </li>
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -218,7 +218,7 @@ const Footer = () => {
                   >
                     Study in USA
                   </Link>
-                </motion.li>
+                </li>
               </ul>
             </div>
 
@@ -226,7 +226,7 @@ const Footer = () => {
               <p className="font-medium text-gray-900">Services</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -241,9 +241,9 @@ const Footer = () => {
                   >
                     Migration VIsa
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -258,9 +258,9 @@ const Footer = () => {
                   >
                     Tourist Visa
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -275,8 +275,8 @@ const Footer = () => {
                   >
                     Business Visa
                   </Link>
-                </motion.li>
-                <motion.li
+                </li>
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -291,8 +291,8 @@ const Footer = () => {
                   >
                     Residence Visa
                   </Link>
-                </motion.li>
-                <motion.li
+                </li>
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -307,8 +307,8 @@ const Footer = () => {
                   >
                     Family Visa
                   </Link>
-                </motion.li>
-                <motion.li
+                </li>
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -323,7 +323,7 @@ const Footer = () => {
                   >
                     Student Visa
                   </Link>
-                </motion.li>
+                </li>
               </ul>
             </div>
 
@@ -331,7 +331,7 @@ const Footer = () => {
               <p className="font-medium text-gray-900">Quick Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -346,9 +346,9 @@ const Footer = () => {
                   >
                     Contact
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -363,9 +363,9 @@ const Footer = () => {
                   >
                     Home
                   </Link>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -380,7 +380,7 @@ const Footer = () => {
                   >
                     About Us
                   </Link>
-                </motion.li>
+                </li>
               </ul>
             </div>
 
@@ -388,7 +388,7 @@ const Footer = () => {
               <p className="font-medium text-gray-900">Contact</p>
 
               <ul className="mt-6 space-y-4 text-sm">
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -403,9 +403,9 @@ const Footer = () => {
                   >
                     +91 9988444184
                   </a>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -420,9 +420,9 @@ const Footer = () => {
                   >
                     +91 9988444184
                   </a>
-                </motion.li>
+                </li>
 
-                <motion.li
+                <li
                   whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                   transition={{
                     type: "spring",
@@ -437,7 +437,7 @@ const Footer = () => {
                   >
                     SCO -38, 2nd Floor, Sector -30C, Chandigarh
                   </Link>
-                </motion.li>
+                </li>
               </ul>
             </div>
 
@@ -460,7 +460,7 @@ const Footer = () => {
             </div> */}
 
             <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
-              <motion.li
+              <li
                 whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                 transition={{
                   type: "spring",
@@ -490,9 +490,9 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-              </motion.li>
+              </li>
 
-              <motion.li
+              <li
                 whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                 transition={{
                   type: "spring",
@@ -522,14 +522,14 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-              </motion.li>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-8 border-t border-gray-100 pt-8">
           <div className="sm:flex sm:justify-between">
-            <motion.p
+            <p
               whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
               transition={{
                 type: "spring",
@@ -540,10 +540,10 @@ const Footer = () => {
               className="text-xs text-gray-500"
             >
               &copy; 2022. Infinity Immigration Consultant. All rights reserved.
-            </motion.p>
+            </p>
 
             <ul className="mt-8 flex flex-wrap justify-start gap-4 text-xs sm:mt-0 lg:justify-end">
-              <motion.li
+              <li
                 whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                 transition={{
                   type: "spring",
@@ -555,9 +555,9 @@ const Footer = () => {
                 <Link className="text-gray-500 transition hover:opacity-75">
                   Terms & Conditions
                 </Link>
-              </motion.li>
+              </li>
 
-              <motion.li
+              <li
                 whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                 transition={{
                   type: "spring",
@@ -569,9 +569,9 @@ const Footer = () => {
                 <Link className="text-gray-500 transition hover:opacity-75">
                   Privacy Policy
                 </Link>
-              </motion.li>
+              </li>
 
-              <motion.li
+              <li
                 whileInView={{ scale: [0, 0.9], opacity: [0, 1] }}
                 transition={{
                   type: "spring",
@@ -583,7 +583,7 @@ const Footer = () => {
                 <Link className="text-gray-500 transition hover:opacity-75">
                   Cookies
                 </Link>
-              </motion.li>
+              </li>
             </ul>
           </div>
         </div>

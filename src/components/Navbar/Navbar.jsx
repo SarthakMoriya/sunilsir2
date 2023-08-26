@@ -14,9 +14,9 @@ const Navbar = () => {
   const { scrollYProgress } = useScroll()
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex-col border border-black-500 w-full fixed z-10">
+    <div className="flex-col  w-full fixed z-10 ">
       {/* Upper Navbar */}
-      <div className=" upper-navbar flex bg-neutral-200   w-full justify-around">
+      <div className=" upper-navbar flex bg-slate-400  w-full justify-around">
         <div className="flex items-center justify-center">
           <div className="flex justify-around w-full p-1 ">
             {/* <div className="p-1 flex items-center  upper-navbar-link">
@@ -74,12 +74,12 @@ const Navbar = () => {
         </div>
 
         <div className=" navbar-links mr-2  cursor-pointer transition-all duration-400 ">
-          <Link to='/country' className="whitespace-nowrap golden-text-animation-link  text-md font-bold uppercase  lg:golden-text-animation  hover:text-white transition-colors delay-100 ease-in-out">Study Abroad</Link>
+          <Link to='/country' className="whitespace-nowrap   text-md font-bold uppercase  lg:golden-text-animation  text-white transition-colors delay-100 ease-in-out">Study Abroad</Link>
         </div>
         <div className=" navbar-links mr-2  uppercase cursor-pointer transition-all duration-400 ">
           <Link
             to="/about"
-            className="text-md font-bold golden-text-animation-link hover:text-white transition-colors delay-100 ease-in-out">
+            className="text-md font-bold  text-white transition-colors delay-100 ease-in-out">
             About
           </Link>
         </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
           <Link to="/about" className="text-md font-bold text-slate-800 hover:text-white transition-colors delay-100 ease-in-out">Services</Link>
         </div> */}
         <div className=" navbar-links mr-2 text-md font-bold uppercase cursor-pointer transition-all duration-400 ">
-          <Link className=" whitespace-nowrap text-md font-bold golden-text-animation-link hover:text-white transition-colors delay-100 ease-in-out" to='/contact'>Contact Us</Link>
+          <Link className=" whitespace-nowrap text-md font-bold  text-white transition-colors delay-100 ease-in-out" to='/contact'>Contact Us</Link>
         </div>
         <div className=" navbar-links-booking mr-2 text-md font-medium uppercase cursor-pointer transition-all duration-400  border p-3 rounded-2xl bg-slate-50 hover:bg-slate-300 hover:text-amber-400 whitespace-nowrap"
           onClick={() => { setOpen(!open) }}

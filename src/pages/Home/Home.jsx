@@ -56,7 +56,6 @@ const Home = () => {
       </div>
       <br />
       <br />
-      <Carousel />
 
       <br />
       <br />
@@ -97,7 +96,7 @@ const Home = () => {
         </motion.div>
       </motion.div>
       {/* Study abroad Ends */}
-
+      <Carousel />
       <br />
       <br />
       <br />
