@@ -3,8 +3,10 @@ import { motion } from "framer-motion"
 
 import "./ContactUs.css";
 import Contact from "../../components/Contact/Contact";
-import peopleimg from "../../assets/peopleimage.jpg";
+import peopleimg from "../../assets/peopleimage.webp";
 import GoogleMap from "../../components/GoogleMap/Googlemap";
+import GoToTop from "../../components/GoToTop/GoToTop";
+import Whatsapp from "../../components/GoToTop/Whatsapp";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -51,6 +53,10 @@ const ContactUs = () => {
       <br /><br /><br /><br />
       <div className="mt-4 mb-4 shadow-xl">
         <GoogleMap />
+      </div>
+      <div className="flex items-center justify-between up-arrow">
+        <GoToTop />
+        <Whatsapp />
       </div>
     </div>
   );

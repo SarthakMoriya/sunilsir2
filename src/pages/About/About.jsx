@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion"
 import "./About.css";
-import peopleimg from "../../assets/peopleimage.jpg";
+import peopleimg from "../../assets/peopleimage.webp";
 import logo from "../../assets/logo.png";
 import pp1 from "../../assets/people/pp1.jpg";
 import pp2 from "../../assets/people/pp2.jpg";
@@ -9,9 +9,11 @@ import pp3 from "../../assets/people/pp3.jpg";
 import pp4 from "../../assets/people/pp4.jpg";
 
 import Counter from "../../components/Counter/Counter";
-import Review from "../../components/Reviews/Review";
+// import Review from "../../components/Reviews/Review";
 import Contact from "../../components/Contact/Contact";
 import Testimonials from "../../components/testimonial/Testimonials";
+import GoToTop from "../../components/GoToTop/GoToTop";
+import Whatsapp from "../../components/GoToTop/Whatsapp";
 
 
 const About = () => {
@@ -62,7 +64,7 @@ const About = () => {
             <motion.h4
               whileInView={{ y: [100, 0], scale: [0, 1,], opacity: [0, 1] }}
               transition={{ duration: .5 }}
-              className="text-3xl text-primaryDark  border-b-4 border-primary">
+              className="text-3xl text-primaryDark  border-b-4 border-primary golden-text-animation">
               About Us
             </motion.h4>
             <motion.h4
@@ -140,7 +142,7 @@ const About = () => {
         <span className=" text-4xl font-extrabold ml-3">Your Service</span>
       </motion.div>
 
-      <div className="team-box p-3">
+      {/* <div className="team-box p-3">
         <div className="team-box p-3 flex-wrap">
           <div className="tablet-team">
 
@@ -208,7 +210,7 @@ const About = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Team Members Ends */}
       {/* Counter Starts */}
@@ -226,7 +228,10 @@ const About = () => {
       {/* Review Ends */}
       <Contact />
       <br /><br /><br />
-
+      <div className="flex items-center justify-between up-arrow">
+        <GoToTop />
+        <Whatsapp />
+      </div>
     </div>
   );
 };

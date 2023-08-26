@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import './University.css'
-import uni1 from "../../../assets/universities/uni1.png";
-import uni2 from "../../../assets/universities/uni2.png";
-import uni3 from "../../../assets/universities/uni3.png";
-import uni4 from "../../../assets/universities/uni4.jpg";
-import uni5 from "../../../assets/universities/uni6.png";
-import uni6 from "../../../assets/universities/uni5.png";
-import uni7 from "../../../assets/universities/uni7.png";
-import uni8 from "../../../assets/universities/uni6b.png";
+import uni1 from "../../../assets/universities/uni1.webp";
+import uni2 from "../../../assets/universities/uni2.webp";
+import uni3 from "../../../assets/universities/uni3.webp";
+import uni4 from "../../../assets/universities/uni4.webp";
+import uni5 from "../../../assets/universities/uni6.webp";
+import uni6 from "../../../assets/universities/uni5.webp";
+import uni7 from "../../../assets/universities/uni7.webp";
+import uni8 from "../../../assets/universities/uni6b.webp";
 
 const University = () => {
   return (

@@ -24,8 +24,14 @@ const Whatsapp = () => {
             behavior: 'smooth',
         });
     };
+
+    const handleWhatsapp=()=>{
+        
+        const whatsappUrl = `https://wa.me/8544875229?text=Hi, I contacted you through your website...`;
+        window.open(whatsappUrl, '_blank');
+    }
     return (
-        <div onClick={scrollToTop} className=''>{showButton && <img src={whastpp} alt="" />}</div>
+        <div onClick={handleWhatsapp} className=''>{showButton && <img src={whastpp} alt="" />}</div>
     )
 }
 

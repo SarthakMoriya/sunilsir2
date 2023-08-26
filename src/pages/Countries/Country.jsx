@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react'
 import { motion } from "framer-motion";
 import './Country.css'
-import peopleimg from "../../assets/peopleimage.jpg";
+import peopleimg from "../../assets/peopleimage.webp";
 import flag from '../../assets/flags.webp'
 import globe from '../../assets/globe.png'
 import CountryCard from '../../components/Cards/CountryCard/CountryCard';
 
-import nz from '../../assets/Country/nz.jpg'
+import nz from '../../assets/Country/nz.webp'
 import aus from '../../assets/Country/austrailia.webp'
-import canada from '../../assets/Country/canada.jpg'
-import europe from '../../assets/Country/europe.jpg'
-import london from '../../assets/Country/london.jpg'
-import usa from '../../assets/Country/usa.jpg'
+import canada from '../../assets/Country/canada.webp'
+import europe from '../../assets/Country/europe.webp'
+import london from '../../assets/Country/london.webp'
+import usa from '../../assets/Country/usa.webp'
 
 import cngif from '../../assets/Country/canadagif.gif'
 import ergif from '../../assets/Country/Europe-Flag.gif'
@@ -21,6 +21,8 @@ import usagif from '../../assets/Country/usagif.gif'
 import ukgif from '../../assets/Country/ukflag.gif'
 import CounterBox from '../../components/Counter/CounterBox';
 import Contact from '../../components/Contact/Contact';
+import GoToTop from '../../components/GoToTop/GoToTop';
+import Whatsapp from '../../components/GoToTop/Whatsapp';
 
 const Country = () => {
   useEffect(() => {
@@ -134,7 +136,10 @@ const Country = () => {
       <div className="m-5 p-6"><hr /></div>
       <Contact />
       <div className="m-5 p-6"><hr /></div>
-
+      <div className="flex items-center justify-between up-arrow">
+        <GoToTop />
+        <Whatsapp />
+      </div>
     </div>
   )
 }

@@ -8,25 +8,79 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-::-webkit-scrollbar-track {
-  background: black;
-  border-radius: 5px;
+
+
+@keyframes shimmerborder {
+  0%, 100% {
+    border-color: #ffd700;
+    box-shadow: 0 0 5px #ffd700;
+
+  }
+
+  50% {
+    border-color: #e4b636;
+    box-shadow: 0 0 3px #ffd700;
+  }
 }
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 5px;
+
+.shiny-border {
+  border-bottom: 4px solid #ffd700;
+  animation: shimmerborder 1.5s infinite;
 }
-::-webkit-scrollbar-track {
-  background: white;
-  border-radius: 5px;
+
+.shiny-border-all {
+  border: 3px solid #ffd700;
+  animation: shimmerborder 1.5s infinite;
 }
+
+@keyframes shimmer {
+  0%, 100% {
+    text-shadow: 0 0 4px #ffd700;
+  }
+
+  50% {
+    text-shadow: 0 0 3px #ffd700;
+  }
+}
+@keyframes shimmerlink {
+  0%, 100% {
+    text-shadow: 0 0 4px #fffbe7;
+  }
+
+  50% {
+    text-shadow: 0 0 3px #fafafa;
+  }
+}
+
+
+
+.golden-text-animation {
+  color: transparent;
+  background: linear-gradient(to bottom, #ffd700, #e4b636);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 1.5s infinite;
+}
+.golden-text-animation-link {
+  color: white;
+  background: linear-gradient(to bottom, #ffd700, #e4b636);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmerlink 1.5s infinite;
+}
+
 .up-arrow {
   position: fixed;
   bottom: 0;
 }
+
 .whatspp {
   position: fixed;
   top: 100px;
+}
+
+body {
+  background-image: url("./assets/bg.svg");
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
@@ -35,20 +89,24 @@
     bottom: 0px;
     width: 98vw;
   }
-  .up-arrow > div > img {
+
+  .up-arrow>div>img {
     width: 40px;
   }
 }
+
 @media screen and (max-width: 375px) {
   .up-arrow {
     position: fixed;
     bottom: 0px;
     width: 98vw;
   }
-  .up-arrow > div > img {
+
+  .up-arrow>div>img {
     width: 40px;
   }
 }
+
 @media screen and (min-width: 425px) {
   .up-arrow {
     position: fixed;
@@ -56,12 +114,14 @@
     width: 98vw;
   }
 }
+
 @media screen and (min-width: 768px) {
   .up-arrow {
     position: fixed;
     bottom: 0px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .up-arrow {
     position: fixed;
@@ -69,6 +129,7 @@
     width: 98vw;
   }
 }
+
 @media screen and (min-width: 1140px) {
   .up-arrow {
     position: fixed;

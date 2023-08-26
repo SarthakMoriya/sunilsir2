@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import CountUp from "react-countup";
-import ScrollTrigger from "react-scroll-trigger";
+import React from "react";
 import { motion } from "framer-motion"
 import CounterBox from "./CounterBox";
 
@@ -16,7 +14,7 @@ const Counter = ({ border }) => {
           whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
           transition={{ type: "spring", stiffness: 100, duration: 1.5, ease: "easeInOut" }}
           className="flex flex-col text-6xl  counter-box">
-          <div className="flex justify-center items-center text-amber-400 ">
+          <div className="flex justify-center items-center text-amber-400  golden-text-animation">
             <CounterBox end={23} />+
           </div>
           <div className="text-2xl font-bold mt-4">Visa Categories</div>
@@ -25,7 +23,7 @@ const Counter = ({ border }) => {
           whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
           transition={{ type: "spring", stiffness: 100, duration: 1.5, ease: "easeInOut" }}
           className="flex flex-col text-6xl counter-box">
-          <div className="flex justify-center items-center text-amber-400">
+          <div className="flex justify-center items-center text-amber-400 golden-text-animation">
             <CounterBox end={30} />+
           </div>
           <div className="text-2xl font-bold mt-4">Team Members</div>
@@ -34,7 +32,7 @@ const Counter = ({ border }) => {
           whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
           transition={{ type: "spring", stiffness: 100, duration: 1.5, ease: "easeInOut" }}
           className="flex flex-col text-6xl counter-box">
-          <div className="flex justify-center items-center text-amber-400">
+          <div className="flex justify-center items-center text-amber-400 golden-text-animation">
             <CounterBox end={331} />+
           </div>
           <div className="text-2xl font-bold mt-4">Visa Process</div>
@@ -43,7 +41,7 @@ const Counter = ({ border }) => {
           whileInView={{ scale: [0, 1,], opacity: [0, 1] }}
           transition={{ type: "spring", stiffness: 100, duration: 1.5, ease: "easeInOut" }}
           className="flex flex-col text-6xl counter-box">
-          <div className="flex justify-center items-center text-amber-400">
+          <div className="flex justify-center items-center text-amber-400 golden-text-animation">
             <CounterBox end={99} />%
           </div>
           <div className="text-2xl font-bold mt-4">Success Rate</div>
