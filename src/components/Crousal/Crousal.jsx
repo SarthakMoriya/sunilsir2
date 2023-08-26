@@ -1,8 +1,4 @@
-import React, { Component } from "react";
-import { motion } from "framer-motion";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState } from "react";
 import CountryCard from "../Cards/CountryCard/CountryCard";
 
 import nz from "../../assets/Country/nz.webp";
@@ -18,86 +14,88 @@ import ausgif from "../../assets/Country/ausgif.gif";
 import nzgif from "../../assets/Country/nzgif.gif";
 import usagif from "../../assets/Country/usagif.gif";
 import ukgif from "../../assets/Country/ukflag.gif";
+import CounterBox from "../../components/Counter/CounterBox";
+import Contact from "../../components/Contact/Contact";
+import GoToTop from "../../components/GoToTop/GoToTop";
+import Whatsapp from "../../components/GoToTop/Whatsapp";
+import { motion } from "framer-motion";
 
-export default class AutoPlay extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear",
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            initialSlide: 1,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-    return (
-      <div>
-        <motion.div
-          whileInView={{  opacity: [0, 1] }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="flex items-center justify-center mt-5 text-xl text-amber-400 font-bold "
-        >
-          <div className="border-b-4 border-b-amber-400 pb-2">
-            Countries we offer support
-          </div>
-        </motion.div>
-        <motion.div
-          whileInView={{  opacity: [0, 1] }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="flex items-center justify-center mt-5 text-3xl country-heading-2 text-center"
-        >
-          <span>Immigration & Visa Services {"   "}</span> <br />
-          <span className=" text-4xl font-extrabold ml-3">
-            Following Countries
-          </span>
-        </motion.div>
-        <br />
-        <br />
-        <br />
-        <Slider {...settings}>
-          <div className="mx-2">
+const data = [
+  {
+    img: nz,
+    gif: ukgif,
+    name: "New Zealand",
+  },
+  {
+    img: aus,
+    gif: ausgif,
+    name: "Australia",
+  },
+  {
+    img: canada,
+    gif: cngif,
+    name: "Canada",
+  },
+  {
+    img: nz,
+    gif: ukgif,
+    name: "New Zealand",
+  },
+  {
+    img: europe,
+    gif: ergif,
+    name: "Europe",
+  },
+  {
+    img: usa,
+    gif: usagif,
+    name: "USA",
+  },
+];
+
+const Crousal = () => {
+  const [page, setPage] = useState(1);
+  const [pageMobile, setPageMobile] = useState(0);
+
+  return (
+    <>
+      <motion.div
+        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex items-center justify-center mt-10 text-xl text-amber-400 font-bold "
+      >
+        <div className="border-b-4 border-b-amber-400 pb-2">
+          Countries we offer support
+        </div>
+      </motion.div>
+      <motion.div
+        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex items-center justify-center mt-5 text-3xl country-heading-2 text-center"
+      >
+        <span>Immigration & Visa Services {"   "}</span> <br />
+        <span className=" text-4xl font-extrabold ml-3">
+          Following Countries
+        </span>
+      </motion.div>
+      <br />
+      <br />
+      <br />
+      <div className="hidden sm:flex sm:flex-col">
+        {page === 1 && (
+          <div className="flex flex-wrap country-card">
             <CountryCard
               cc={canada}
               name={"Canada"}
               gif={cngif}
               className="flex-1 "
             />
-          </div>
-          <div className="mx-2">
             <CountryCard
               cc={usa}
               name={"USA"}
               gif={usagif}
               className="flex-1 "
             />
-          </div>
-          <div className="mx-2">
             <CountryCard
               cc={europe}
               name={"Europe"}
@@ -105,116 +103,77 @@ export default class AutoPlay extends Component {
               className="flex-1 "
             />
           </div>
-          <div className="mx-2">
+        )}
+        {page === 2 && (
+          <div className="flex flex-wrap country-card">
             <CountryCard
               cc={nz}
               name={"New Zealand"}
               gif={nzgif}
-              className="flex-1 mt-2 ml-5"
+              className="flex-1 "
             />
-          </div>
-          <div className="mx-2">
-            <CountryCard
-              cc={london}
-              name={"London"}
-              gif={ukgif}
-              className="flex-1 mt-2 "
-            />
-          </div>
-          <div className="mx-2">
             <CountryCard
               cc={aus}
               name={"Australia"}
               gif={ausgif}
-              className="flex-1 mt-2 "
+              className="flex-1 "
+            />
+            <CountryCard
+              cc={london}
+              name={"Australia"}
+              gif={ukgif}
+              className="flex-1 "
             />
           </div>
-        </Slider>
+        )}
+        <div className="flex items-center justify-center">
+          <div
+            className="mx-2 my-4 font-extrabold text-4xl cursor-pointer bg-slate-300 px-1 py-1"
+            onClick={() => setPage((pg) => (pg === 1 ? 2 : 1))}
+          >
+            {"<"}
+          </div>
+          <div
+            className="mx-2 my-4 font-extrabold text-4xl cursor-pointer bg-slate-300 px-1 py-1"
+            onClick={() => setPage((pg) => (pg === 2 ? 1 : 2))}
+          >
+            {">"}
+          </div>
+        </div>
       </div>
-    );
-  }
-}
 
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import "./crousal.css";
-// import image1 from '../../assets/aboutusimg.jpg';
-// function Carousel({ images }) {
-//   const [current, setCurrent] = useState(0);
-//   const [autoPlay, setAutoPlay] = useState(true);
-//   let timeOut = null;
+      {/* MObile VIew */}
+      <div className="sm:hidden">
+        <div className="flex flex-col">
+          {page === 1 && (
+            <div className="flex flex-wrap country-card">
+              <CountryCard
+                cc={data[pageMobile].img}
+                name={data[pageMobile].name}
+                gif={data[pageMobile].gif}
+                className="flex-1 "
+              />
+            </div>
+          )}
 
-//   useEffect(() => {
-//     timeOut =
-//       autoPlay &&
-//       setTimeout(() => {
-//         slideRight();
-//       }, 2500);
-//   });
+          <div className="flex items-center justify-center">
+            <div
+              className="mx-2 my-4 font-extrabold text-4xl cursor-pointer bg-slate-300 px-1 py-1"
+              onClick={() => setPageMobile((pg) => (pg === 0 ? 5 : pg - 1))}
+            >
+              {"<"}
+            </div>
+            <div
+              className="mx-2 my-4 font-extrabold text-4xl cursor-pointer bg-slate-300 px-1 py-1"
+              onClick={() => setPageMobile((pg) => (pg === 5 ? 0 : pg + 1))}
+            >
+              {">"}
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
-//   const slideRight = () => {
-//     setCurrent(current === images.length - 1 ? 0 : current + 1);
-//   };
-
-//   const slideLeft = () => {
-//     setCurrent(current === 0 ? images.length - 1 : current - 1);
-//   };
-//   console.log(current);
-//   return (
-//     <div
-//       className="carousel"
-//       onMouseEnter={() => {
-//         setAutoPlay(false);
-//         clearTimeout(timeOut);
-//       }}
-//       onMouseLeave={() => {
-//         setAutoPlay(true);
-//       }}
-//     >
-//       <div className="carousel_wrapper">
-//         {images.map((image, index) => {
-//           return (
-//             /* (condition) ? true : false */
-
-//             <div
-//               key={index}
-//               className={
-//                 index == current
-//                   ? "carousel_card carousel_card-active"
-//                   : "carousel_card"
-//               }
-//             >
-//               <img className="card_image" src={image1} alt="" />
-//               <div className="card_overlay">
-//                 <h2 className="card_title">{image.title}</h2>
-//               </div>
-//             </div>
-//           );
-//         })}
-//         <div className="carousel_arrow_left" onClick={slideLeft}>
-//           &lsaquo;
-//         </div>
-//         <div className="carousel_arrow_right" onClick={slideRight}>
-//           &rsaquo;
-//         </div>
-//         <div className="carousel_pagination">
-//           {images.map((_, index) => {
-//             return (
-//               <div
-//                 key={index}
-//                 className={
-//                   index == current
-//                     ? "pagination_dot pagination_dot-active"
-//                     : "pagination_dot"
-//                 }
-//                 onClick={() => setCurrent(index)}
-//               ></div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Carousel;
+export default Crousal;

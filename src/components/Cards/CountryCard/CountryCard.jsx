@@ -33,9 +33,9 @@ const CountryCard = ({ cc, name, gif }) => {
             className="w-[112px] h-[84px] object-contain mb-3 "
           />
         </div>
-        <div className="sm:pl-5 sm:pr-5 sm:pt-3 sm:pb-2">
+        <div className="p-2 sm:pl-5 sm:pr-5 sm:pt-3 sm:pb-2">
           <Link href="#">
-            <h5 className=" text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">
+            <h5 className=" text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white text-center sm:text-left">
               {name}
             </h5>
           </Link>

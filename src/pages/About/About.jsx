@@ -230,7 +230,7 @@ const About = () => {
       <br /><br /><br />
       <div className="flex items-center justify-between up-arrow">
         <GoToTop />
-        <Whatsapp />
+        {/* <Whatsapp /> */}
       </div>
     </div>
   );

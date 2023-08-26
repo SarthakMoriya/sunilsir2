@@ -138,7 +138,7 @@ const Country = () => {
       <div className="m-5 p-6"><hr /></div>
       <div className="flex items-center justify-between up-arrow">
         <GoToTop />
-        <Whatsapp />
+        {/* <Whatsapp /> */}
       </div>
     </div>
   )

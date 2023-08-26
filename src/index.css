@@ -137,3 +137,7 @@ body {
     width: 97vw;
   }
 }
+
+.slick-prev,.slick-next{
+  position: initial;
+}
